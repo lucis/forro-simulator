@@ -4,6 +4,26 @@ Frontend React + TypeScript criado com Vite e preparado para publicação como
 [Cloudflare Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
 O projeto não usa Cloudflare Pages nem possui backend.
 
+## Marco V0: editor de ritmo
+
+O app carrega a faixa local **Santana, O Cantador — Se Tu Quiser** e permite
+construir uma timeline de zabumba diretamente sobre a reprodução:
+
+- `Espaço`: reproduzir ou pausar;
+- `Z`: marcar uma batida no topo da zabumba;
+- `C`: marcar o camarão;
+- `A`: iniciar uma seção `accordion-only`;
+- `R`: iniciar uma seção `rhythm`;
+- `Delete` ou `Backspace`: apagar o marcador selecionado.
+
+Depois de marcar dois ciclos `Z · Z · Z · C`, use **Prever até o fim** para
+repetir matematicamente o ritmo. Arraste uma marca prevista para corrigi-la e
+use **Reflow a partir daqui** para recalcular as batidas seguintes. A timeline
+pode ser importada ou exportada no formato JSON.
+
+Os timestamps usam segundos desde o início do MP3. As marcações manuais e
+corrigidas são preservadas quando a previsão é recalculada.
+
 ## Requisitos
 
 - Node.js 20.19 ou mais recente
