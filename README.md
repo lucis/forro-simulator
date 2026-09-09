@@ -21,6 +21,10 @@ repetir matematicamente o ritmo. Arraste uma marca prevista para corrigi-la e
 use **Reflow a partir daqui** para recalcular as batidas seguintes. A timeline
 pode ser importada ou exportada no formato JSON.
 
+Os trilhos de seções e zabumba compartilham a mesma janela temporal do
+waveform. O controle **Zoom** amplia a forma de onda; a régua, os marcadores,
+o playhead e o arraste acompanham automaticamente o intervalo visível.
+
 Os timestamps usam segundos desde o início do MP3. As marcações manuais e
 corrigidas são preservadas quando a previsão é recalculada.
 

@@ -9,6 +9,8 @@ test('registra atalho de zabumba mesmo após um botão receber foco', () => {
     <TimelineEditor
       currentTime={1.25}
       duration={10}
+      viewport={{ start: 0, end: 10 }}
+      audioPlayer={<div />}
       timeline={EMPTY_XOTE_TIMELINE}
       onTimelineChange={onTimelineChange}
       onNotice={vi.fn()}
@@ -38,6 +40,8 @@ test('apaga o marcador selecionado com Delete', () => {
     <TimelineEditor
       currentTime={2}
       duration={10}
+      viewport={{ start: 0, end: 10 }}
+      audioPlayer={<div />}
       timeline={{
         ...EMPTY_XOTE_TIMELINE,
         events: [

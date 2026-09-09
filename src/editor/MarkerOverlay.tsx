@@ -1,9 +1,15 @@
 import type { PointerEvent } from 'react'
+import {
+  timeToViewportPercent,
+  viewportRatioToTime,
+  type TimelineViewport,
+} from '../audio/timelineViewport'
 import { XOTE_RHYTHM } from '../domain/rhythm'
 import type { RhythmMarker, SectionStart } from '../domain/timeline'
 
 type MarkerOverlayProps = {
-  duration: number
+  currentTime: number
+  viewport: TimelineViewport
   markers: RhythmMarker[]
   sections: SectionStart[]
   selectedId: string | null
@@ -12,12 +18,14 @@ type MarkerOverlayProps = {
   onMove(id: string, time: number): void
 }
 
-function percent(time: number, duration: number) {
-  return duration > 0 ? Math.min(100, Math.max(0, (time / duration) * 100)) : 0
+function formatRulerTime(seconds: number) {
+  const minutes = Math.floor(seconds / 60)
+  return `${minutes}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`
 }
 
 export function MarkerOverlay({
-  duration,
+  currentTime,
+  viewport,
   markers,
   sections,
   selectedId,
@@ -28,19 +36,38 @@ export function MarkerOverlay({
   const moveMarker = (event: PointerEvent<HTMLButtonElement>, id: string) => {
     if (event.buttons !== 1) return
     const bounds = event.currentTarget.parentElement?.getBoundingClientRect()
-    if (!bounds || duration <= 0) return
+    if (!bounds || viewport.end <= viewport.start) return
     const ratio = Math.min(1, Math.max(0, (event.clientX - bounds.left) / bounds.width))
-    onMove(id, ratio * duration)
+    onMove(id, viewportRatioToTime(ratio, viewport))
   }
+
+  const visibleMarkers = markers.filter(
+    ({ t }) => t >= viewport.start && t <= viewport.end,
+  )
+  const visibleSections = sections.filter(
+    ({ t }) => t >= viewport.start && t <= viewport.end,
+  )
+  const ticks = Array.from({ length: 5 }, (_, index) => {
+    const ratio = index / 4
+    return viewport.start + ratio * (viewport.end - viewport.start)
+  })
+  const playheadPercent = timeToViewportPercent(currentTime, viewport)
 
   return (
     <div className="timeline-lanes">
+      <div className="time-ruler" aria-hidden="true">
+        {ticks.map((time, index) => (
+          <span key={index} style={{ left: `${index * 25}%` }}>
+            {formatRulerTime(time)}
+          </span>
+        ))}
+      </div>
       <div className="section-lane" aria-label="Seções da música">
-        {sections.map((section) => (
+        {visibleSections.map((section) => (
           <span
             className={`section-marker section-marker--${section.section}`}
             key={section.id}
-            style={{ left: `${percent(section.t, duration)}%` }}
+            style={{ left: `${timeToViewportPercent(section.t, viewport)}%` }}
             title={`${section.t.toFixed(2)}s — ${section.section}`}
           >
             {section.section}
@@ -48,7 +75,7 @@ export function MarkerOverlay({
         ))}
       </div>
       <div className="marker-lane" aria-label="Marcações da zabumba">
-        {markers.map((marker) => {
+        {visibleMarkers.map((marker) => {
           const slot = XOTE_RHYTHM.cycle.find(({ id }) => id === marker.slotId)
           return (
             <button
@@ -67,7 +94,7 @@ export function MarkerOverlay({
                 onSelect(marker.id)
               }}
               onPointerMove={(event) => moveMarker(event, marker.id)}
-              style={{ left: `${percent(marker.t, duration)}%` }}
+              style={{ left: `${timeToViewportPercent(marker.t, viewport)}%` }}
               title={`${slot?.danceLabel ?? marker.slotId} · ${marker.t.toFixed(2)}s · ${marker.source}`}
             >
               {slot?.stroke === 'bottom' ? 'C' : 'Z'}
@@ -75,6 +102,13 @@ export function MarkerOverlay({
           )
         })}
       </div>
+      {playheadPercent >= 0 && playheadPercent <= 100 ? (
+        <span
+          className="timeline-playhead"
+          aria-hidden="true"
+          style={{ left: `${playheadPercent}%` }}
+        />
+      ) : null}
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AudioPlayer } from './audio/AudioPlayer'
 import { parseTrackTimeline } from './audio/timelineQueries'
+import type { TimelineViewport } from './audio/timelineViewport'
 import initialTimeline from './data/xoteTimeline.json'
 import type { TrackTimeline } from './domain/timeline'
 import { TimelineEditor } from './editor/TimelineEditor'
@@ -9,6 +10,7 @@ import './index.css'
 function App() {
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [viewport, setViewport] = useState<TimelineViewport>({ start: 0, end: 0 })
   const [timeline, setTimeline] = useState<TrackTimeline>(() => parseTrackTimeline(initialTimeline))
   const [notice, setNotice] = useState('Marque dois ciclos completos para calibrar a previsão.')
 
@@ -28,29 +30,35 @@ function App() {
             <p className="track-detail">Xote · arquivo local · {duration > 0 ? `${Math.floor(duration / 60)}m ${Math.round(duration % 60)}s` : 'carregando'}</p>
           </div>
         </div>
-        <AudioPlayer currentTime={currentTime} onCurrentTimeChange={setCurrentTime} onDurationChange={setDuration} />
-      </section>
-      <div className="workspace-grid">
         <TimelineEditor
           currentTime={currentTime}
           duration={duration}
+          viewport={viewport.end > viewport.start ? viewport : { start: 0, end: duration }}
+          audioPlayer={(
+            <AudioPlayer
+              currentTime={currentTime}
+              onCurrentTimeChange={setCurrentTime}
+              onDurationChange={setDuration}
+              onViewportChange={setViewport}
+            />
+          )}
           timeline={timeline}
           onTimelineChange={setTimeline}
           onNotice={setNotice}
         />
-        <aside className="guide-panel">
-          <p className="kicker">Atalhos</p><h2>Ouça. Marque. Corrija.</h2>
-          <div className="shortcut-list">
-            <div><kbd>Espaço</kbd><span>tocar / pausar</span></div>
-            <div><kbd>Z</kbd><span>topo da zabumba</span></div>
-            <div><kbd>C</kbd><span>camarão</span></div>
-            <div><kbd>A</kbd><span>início sanfona</span></div>
-            <div><kbd>R</kbd><span>início do ritmo</span></div>
-            <div><kbd>Del</kbd><span>apagar selecionado</span></div>
-          </div>
-          <p className="guide-note">Marque <strong>Z · Z · Z · C</strong> duas vezes. A previsão aprende o ciclo local — não um BPM artificial.</p>
-        </aside>
-      </div>
+      </section>
+      <aside className="guide-panel guide-panel--wide">
+        <div><p className="kicker">Atalhos</p><h2>Ouça. Marque. Corrija.</h2></div>
+        <div className="shortcut-list">
+          <div><kbd>Espaço</kbd><span>tocar / pausar</span></div>
+          <div><kbd>Z</kbd><span>topo da zabumba</span></div>
+          <div><kbd>C</kbd><span>camarão</span></div>
+          <div><kbd>A</kbd><span>início sanfona</span></div>
+          <div><kbd>R</kbd><span>início do ritmo</span></div>
+          <div><kbd>Del</kbd><span>apagar selecionado</span></div>
+        </div>
+        <p className="guide-note">Marque <strong>Z · Z · Z · C</strong> duas vezes. A previsão aprende o ciclo local — não um BPM artificial.</p>
+      </aside>
       <footer className="app-footer">
         <p role="status">{notice}</p><span>Cloudflare Workers</span>
       </footer>

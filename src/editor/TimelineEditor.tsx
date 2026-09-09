@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { predictTimeline, reflowTimelineFromAnchor } from '../audio/timelinePrediction'
 import { getSectionAtTime, parseTrackTimeline, sortTimelineEvents } from '../audio/timelineQueries'
+import type { TimelineViewport } from '../audio/timelineViewport'
 import { XOTE_RHYTHM, getNextSlot, getSlotForStroke } from '../domain/rhythm'
 import type { RhythmMarker, SectionKind, SectionStart, TrackTimeline } from '../domain/timeline'
 import { MarkerOverlay } from './MarkerOverlay'
@@ -9,6 +10,8 @@ import { TimelineToolbar } from './TimelineToolbar'
 type TimelineEditorProps = {
   currentTime: number
   duration: number
+  viewport: TimelineViewport
+  audioPlayer: ReactNode
   timeline: TrackTimeline
   onTimelineChange(timeline: TrackTimeline): void
   onNotice(message: string): void
@@ -18,7 +21,7 @@ function createId(prefix: string) {
   return `${prefix}-${crypto.randomUUID()}`
 }
 
-export function TimelineEditor({ currentTime, duration, timeline, onTimelineChange, onNotice }: TimelineEditorProps) {
+export function TimelineEditor({ currentTime, duration, viewport, audioPlayer, timeline, onTimelineChange, onNotice }: TimelineEditorProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [unusualIds, setUnusualIds] = useState<Set<string>>(() => new Set())
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -190,15 +193,23 @@ export function TimelineEditor({ currentTime, duration, timeline, onTimelineChan
         onImport={(event) => void importTimeline(event.target.files?.[0])}
         onClear={clearTimeline}
       />
-      <MarkerOverlay
-        duration={duration}
-        markers={markers}
-        sections={sections}
-        selectedId={selectedId}
-        unusualIds={unusualIds}
-        onSelect={setSelectedId}
-        onMove={moveMarker}
-      />
+      <div
+        className="timeline-surface"
+        role="region"
+        aria-label="Timeline alinhada ao áudio"
+      >
+        <MarkerOverlay
+          currentTime={currentTime}
+          viewport={viewport}
+          markers={markers}
+          sections={sections}
+          selectedId={selectedId}
+          unusualIds={unusualIds}
+          onSelect={setSelectedId}
+          onMove={moveMarker}
+        />
+        {audioPlayer}
+      </div>
       <div className="timeline-summary">
         <span><b>{markers.length}</b> batidas</span>
         <span><b>{sections.length}</b> seções</span>
