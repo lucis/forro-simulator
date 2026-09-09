@@ -9,7 +9,7 @@ import { DanceCount } from '../components/DanceCount'
 import type { CameraPreset } from '../dance/DanceScene'
 import { getDanceClockState } from '../dance/danceClock'
 import { interpolatePattern } from '../dance/interpolateDance'
-import { BASIC_XOTE } from '../dance/patterns/basicXote'
+import { DEFAULT_XOTE_PATTERN, XOTE_PATTERNS } from '../dance/patterns'
 import { XOTE_RHYTHM } from '../domain/rhythm'
 import type { TrackTimeline } from '../domain/timeline'
 
@@ -25,7 +25,7 @@ const rhythmName = (id: string) => id === 'xote' ? 'Xote' : id === 'baiao' ? 'Ba
 export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = loadCatalogTrack }: Props) {
   const [catalog, setCatalog] = useState<TrackCatalog | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
-  const [filter, setFilter] = useState('all')
+  const [started, setStarted] = useState(false)
   const [timeline, setTimeline] = useState<TrackTimeline | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [currentTime, setCurrentTime] = useState(0)
@@ -34,8 +34,11 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
   const [camera, setCamera] = useState<CameraPreset>('front')
   const [showLeader, setShowLeader] = useState(true)
   const [showFollower, setShowFollower] = useState(true)
+  const [patternId, setPatternId] = useState(DEFAULT_XOTE_PATTERN.id)
+  const pattern = XOTE_PATTERNS.find(({ id }) => id === patternId) ?? DEFAULT_XOTE_PATTERN
 
   const chooseTrack = (id: string) => {
+    setStarted(false)
     setTimeline(null)
     setError(null)
     setCurrentTime(0)
@@ -55,25 +58,22 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
 
   const selected = catalog?.tracks.find(({ id }) => id === selectedId) ?? null
   useEffect(() => {
-    if (!selected) return
+    if (!selected || !started) return
     let active = true
     timelineLoader(selected).then((next) => active && setTimeline(next)).catch(() => active && setError('Não foi possível carregar esta música'))
     return () => { active = false }
-  }, [selected, timelineLoader])
+  }, [selected, started, timelineLoader])
 
-  const rhythms = useMemo(() => [...new Set(catalog?.tracks.map(({ rhythmId }) => rhythmId) ?? [])], [catalog])
-  const visibleTracks = catalog?.tracks.filter(({ rhythmId }) => filter === 'all' || rhythmId === filter) ?? []
+  const rhythmGroups = useMemo(() => {
+    const ids = [...new Set(catalog?.tracks.map(({ rhythmId }) => rhythmId) ?? [])]
+    return ids.map((rhythmId) => ({ rhythmId, tracks: catalog?.tracks.filter((track) => track.rhythmId === rhythmId) ?? [] }))
+  }, [catalog])
   const rhythm = selected?.rhythmId === 'xote' ? XOTE_RHYTHM : null
   const clock = timeline && rhythm ? getDanceClockState({ time: currentTime, timeline, rhythm }) : null
-  const patternProgress = clock ? ((clock.cycleIndex + clock.cycleProgress) / BASIC_XOTE.durationInCycles) % 1 : 0
-  const pose = clock?.active ? interpolatePattern(BASIC_XOTE, patternProgress) : BASIC_XOTE.keyframes[0].pose
+  const patternProgress = clock ? ((clock.cycleIndex + clock.cycleProgress) / pattern.durationInCycles) % 1 : 0
+  const pose = clock?.active ? interpolatePattern(pattern, patternProgress) : pattern.keyframes[0].pose
   const lastMarkerTime = timeline?.events.filter(({ type }) => type === 'rhythm-marker').at(-1)?.t ?? Number.POSITIVE_INFINITY
   const countLabel = clock?.active ? clock.danceLabel ?? '—' : currentTime >= lastMarkerTime ? 'Fim' : clock?.section ? 'Pausa' : 'Prepare-se'
-  const chooseFilter = (rhythmId: string) => {
-    setFilter(rhythmId)
-    const first = catalog?.tracks.find((track) => rhythmId === 'all' || track.rhythmId === rhythmId)
-    if (first) chooseTrack(first.id)
-  }
 
   return (
     <main className="studio-shell">
@@ -82,27 +82,36 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
         <div><p className="eyebrow">Música que faz dançar</p><h1>Simulador de Forró</h1></div>
         <span className="studio-badge">V0</span>
       </header>
+      <section className="hero" aria-labelledby="hero-title">
+        <h2 id="hero-title">Tem dificuldade em dançar forró no ritmo?</h2>
+        <p className="hero-subtitle">Aprenda com o Simulador de Forró.</p>
+        <ol className="hero-steps">
+          <li><span className="hero-step-number" aria-hidden="true">1</span>Escolha um estilo e uma música</li>
+          <li><span className="hero-step-number" aria-hidden="true">2</span>Aperte em simular e ajuste os controles</li>
+        </ol>
+      </section>
       <section className="catalog-panel" aria-labelledby="catalog-title">
-        <p className="kicker">Catálogo</p><h2 id="catalog-title">Escolha o ritmo</h2>
-        <div className="rhythm-rail" aria-label="Ritmos">
-          <button aria-pressed={filter === 'all'} onClick={() => chooseFilter('all')}>Todos</button>
-          {rhythms.map((id) => <button aria-pressed={filter === id} key={id} onClick={() => chooseFilter(id)}>{rhythmName(id)}</button>)}
-        </div>
-        <div className="track-rail" aria-label="Músicas">
-          {visibleTracks.map((track) => <button aria-pressed={selectedId === track.id} className="track-option" key={track.id} onClick={() => chooseTrack(track.id)}><span>{track.title}</span><small>{track.artist}</small></button>)}
-        </div>
+        <p className="kicker">Catálogo</p><h2 id="catalog-title">Selecione o ritmo e música</h2>
+        <label className="visually-hidden" htmlFor="track-select">Música</label>
+        <select id="track-select" className="track-select" value={selectedId ?? ''} onChange={(event) => chooseTrack(event.target.value)}>
+          {rhythmGroups.map(({ rhythmId, tracks }) => (
+            <optgroup label={rhythmName(rhythmId)} key={rhythmId}>
+              {tracks.map((track) => <option key={track.id} value={track.id}>{`${rhythmName(track.rhythmId)} | ${track.title} - ${track.artist}`}</option>)}
+            </optgroup>
+          ))}
+        </select>
+        <button className="button button--primary simulate-button" disabled={!selected} onClick={() => setStarted(true)}>Simular</button>
       </section>
       {!catalog && !error ? <p className="loading-state">Carregando catálogo…</p> : null}
       {error ? <p className="error-state" role="alert">{error}</p> : null}
-      {selected ? (
-        <section className="studio-player" aria-labelledby="selected-track-title">
-          <div className="selected-track-copy"><p className="kicker">Agora dançando</p><h2 id="selected-track-title">{selected.title}</h2><p>{selected.artist} · {rhythmName(selected.rhythmId)}</p></div>
+      {started && selected ? (
+        <section className="studio-player" aria-label={`Dançando ${selected.title}`}>
           <div className="stage-wrap">
             <Suspense fallback={<div className="dance-stage stage-loading">Montando o salão…</div>}><DanceStage pose={pose} showLeader={showLeader} showFollower={showFollower} camera={camera} /></Suspense>
             <DanceCount label={countLabel} active={Boolean(clock?.active)} />
           </div>
-          <DanceControls camera={camera} onCameraChange={setCamera} showLeader={showLeader} showFollower={showFollower} onLeaderChange={setShowLeader} onFollowerChange={setShowFollower} />
-          {timeline ? <AudioPlayer key={selected.id} src={selected.audioUrl} currentTime={currentTime} onCurrentTimeChange={setCurrentTime} onDurationChange={setDuration} onViewportChange={setViewport} /> : null}
+          <DanceControls camera={camera} onCameraChange={setCamera} showLeader={showLeader} showFollower={showFollower} onLeaderChange={setShowLeader} onFollowerChange={setShowFollower} patterns={XOTE_PATTERNS} patternId={patternId} onPatternChange={setPatternId} />
+          {timeline ? <AudioPlayer key={selected.id} src={selected.audioUrl} currentTime={currentTime} onCurrentTimeChange={setCurrentTime} onDurationChange={setDuration} onViewportChange={setViewport} waveformHeight={48} /> : <p className="loading-state">Carregando música…</p>}
           <span className="visually-hidden">{duration} {viewport.start}</span>
         </section>
       ) : null}

@@ -8,6 +8,7 @@ type AudioPlayerProps = {
   onCurrentTimeChange(time: number): void
   onDurationChange(duration: number): void
   onViewportChange(viewport: TimelineViewport): void
+  waveformHeight?: number
 }
 
 function formatTime(seconds: number) {
@@ -23,9 +24,11 @@ export function AudioPlayer({
   onCurrentTimeChange,
   onDurationChange,
   onViewportChange,
+  waveformHeight = 108,
 }: AudioPlayerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const waveSurferRef = useRef<WaveSurfer | null>(null)
+  const onCurrentTimeChangeRef = useRef(onCurrentTimeChange)
   const [isPlaying, setIsPlaying] = useState(false)
   const [duration, setDuration] = useState(0)
   const [playbackRate, setPlaybackRate] = useState(1)
@@ -37,7 +40,7 @@ export function AudioPlayer({
     const waveSurfer = WaveSurfer.create({
       container: containerRef.current,
       url: src,
-      height: 108,
+      height: waveformHeight,
       waveColor: '#4b5158',
       progressColor: '#ff7849',
       cursorColor: '#ffd0bc',
@@ -87,7 +90,7 @@ export function AudioPlayer({
       waveSurfer.destroy()
       waveSurferRef.current = null
     }
-  }, [onCurrentTimeChange, onDurationChange, onViewportChange, src])
+  }, [onCurrentTimeChange, onDurationChange, onViewportChange, src, waveformHeight])
 
   useEffect(() => {
     const waveSurfer = waveSurferRef.current
@@ -98,6 +101,22 @@ export function AudioPlayer({
       waveSurfer.setTime(currentTime)
     }
   }, [currentTime])
+
+  useEffect(() => {
+    onCurrentTimeChangeRef.current = onCurrentTimeChange
+  }, [onCurrentTimeChange])
+
+  useEffect(() => {
+    if (!isPlaying) return
+    let frame: number
+    const tick = () => {
+      const waveSurfer = waveSurferRef.current
+      if (waveSurfer) onCurrentTimeChangeRef.current(waveSurfer.getCurrentTime())
+      frame = requestAnimationFrame(tick)
+    }
+    frame = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(frame)
+  }, [isPlaying])
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -139,8 +158,8 @@ export function AudioPlayer({
         aria-label="Forma de onda do áudio"
       />
       <div className="transport">
-        <button className="button button--primary" onClick={togglePlayback}>
-          {isPlaying ? 'Pausar' : 'Reproduzir'}
+        <button aria-label={isPlaying ? 'Pausar' : 'Reproduzir'} className="button button--primary play-button" onClick={togglePlayback}>
+          <span aria-hidden="true">{isPlaying ? '⏸' : '▶'}</span>
         </button>
         <output className="timecode" aria-live="off">
           {formatTime(currentTime)} <span>/ {formatTime(duration)}</span>

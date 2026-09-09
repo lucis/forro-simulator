@@ -19,7 +19,7 @@ const catalog: TrackCatalog = {
 
 const timeline = (trackId: string, rhythmId: string) => ({ trackId, rhythmId, events: [] })
 
-test('seleciona a primeira faixa e permite trocar sem navegar', async () => {
+test('lista as músicas no seletor e só carrega o palco após simular', async () => {
   render(
     <HomeStudioPage
       catalogLoader={async () => catalog}
@@ -27,28 +27,38 @@ test('seleciona a primeira faixa e permite trocar sem navegar', async () => {
     />,
   )
 
-  expect(await screen.findByRole('heading', { name: 'Xote A' })).toBeInTheDocument()
+  const select = await screen.findByLabelText('Música')
+  expect(select).toHaveValue('xote-a')
+  expect(screen.getByRole('option', { name: 'Xote | Xote A - Artista A' })).toBeInTheDocument()
+  expect(screen.getByRole('option', { name: 'Baião | Baião B - Artista B' })).toBeInTheDocument()
+  expect(screen.queryByTestId('audio-source')).not.toBeInTheDocument()
+  expect(screen.queryByTestId('stage-props')).not.toBeInTheDocument()
+
+  fireEvent.click(screen.getByRole('button', { name: 'Simular' }))
+
   expect(await screen.findByTestId('audio-source')).toHaveTextContent('/a.mp3')
-
-  fireEvent.click(screen.getByRole('button', { name: /Baião B/ }))
-
-  expect(await screen.findByRole('heading', { name: 'Baião B' })).toBeInTheDocument()
-  expect(await screen.findByTestId('audio-source')).toHaveTextContent('/b.mp3')
+  expect(screen.getByTestId('stage-props')).toBeInTheDocument()
 })
 
-test('filtra músicas por ritmo', async () => {
+test('trocar a música antes de simular não carrega nada e exige novo clique', async () => {
   render(
     <HomeStudioPage
       catalogLoader={async () => catalog}
       timelineLoader={async (entry) => timeline(entry.id, entry.rhythmId)}
     />,
   )
-  await screen.findByRole('heading', { name: 'Xote A' })
 
-  fireEvent.click(screen.getByRole('button', { name: 'Baião' }))
+  const select = await screen.findByLabelText('Música')
+  fireEvent.click(screen.getByRole('button', { name: 'Simular' }))
+  expect(await screen.findByTestId('audio-source')).toHaveTextContent('/a.mp3')
 
-  expect(screen.queryByRole('button', { name: /Xote A/ })).not.toBeInTheDocument()
-  expect(screen.getByRole('button', { name: /Baião B/ })).toBeInTheDocument()
+  fireEvent.change(select, { target: { value: 'baiao-b' } })
+
+  expect(screen.queryByTestId('audio-source')).not.toBeInTheDocument()
+  expect(screen.queryByTestId('stage-props')).not.toBeInTheDocument()
+
+  fireEvent.click(screen.getByRole('button', { name: 'Simular' }))
+  expect(await screen.findByTestId('audio-source')).toHaveTextContent('/b.mp3')
 })
 
 test('sincroniza contagem e controles com a timeline', async () => {
@@ -57,6 +67,9 @@ test('sincroniza contagem e controles com a timeline', async () => {
     { id: 'b', type: 'rhythm-marker' as const, t: 2, slotId: 'z2', source: 'manual' as const },
   ]
   render(<HomeStudioPage catalogLoader={async () => ({ tracks: [catalog.tracks[0]] })} timelineLoader={async () => ({ ...timeline('xote-a', 'xote'), events: beats })} />)
+
+  await screen.findByLabelText('Música')
+  fireEvent.click(screen.getByRole('button', { name: 'Simular' }))
 
   expect(await screen.findByText('Prepare-se')).toBeInTheDocument()
   fireEvent.click(await screen.findByRole('button', { name: 'Ir para batida' }))

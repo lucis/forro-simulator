@@ -7,6 +7,7 @@ const lerpDancer = (from: DancerPose, to: DancerPose, progress: number): DancerP
   rightFoot: lerpVec(from.rightFoot, to.rightFoot, progress),
   bodyOffset: lerpVec(from.bodyOffset, to.bodyOffset, progress),
   rotation: lerp(from.rotation, to.rotation, progress),
+  bounce: lerp(from.bounce, to.bounce, progress),
   weight: from.weight,
 })
 

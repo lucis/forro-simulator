@@ -1,50 +1,71 @@
 # Forró Simulator
 
-Frontend React + TypeScript criado com Vite e preparado para publicação como
+A React + TypeScript frontend built with Vite, deployed as
 [Cloudflare Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
-O projeto não usa Cloudflare Pages nem possui backend.
+The project has no backend and does not use Cloudflare Pages.
 
-## Marco V0: editor de ritmo
+## V0 milestone: Home Studio
 
-O app carrega a faixa local **Santana, O Cantador — Se Tu Quiser** e permite
-construir uma timeline de zabumba diretamente sobre a reprodução:
+The `/` route is the main mobile-first experience. Its landing fold explains
+the pitch — struggling to dance forró on the beat? Learn with the Forró
+Simulator — and points at the two steps: pick a style and a track, then hit
+**Simular** and tune the controls.
 
-- `Espaço`: reproduzir ou pausar;
-- `Z`: marcar uma batida no topo da zabumba;
-- `C`: marcar o camarão;
-- `A`: iniciar uma seção `accordion-only`;
-- `R`: iniciar uma seção `rhythm`;
-- `Delete` ou `Backspace`: apagar o marcador selecionado.
+Once you simulate, the app loads the track's timeline, synchronizes the audio
+with a pedagogical beat count, and renders two geometric dancers in Three.js.
+The stage offers front, side, and top camera presets, lets you hide either
+dancer, and lets you switch the couple's step pattern (e.g. "Frente e trás",
+"Dois pra lá, dois pra cá") without touching playback.
 
-Depois de marcar dois ciclos `Z · Z · Z · C`, use **Prever até o fim** para
-repetir matematicamente o ritmo. Arraste uma marca prevista para corrigi-la e
-use **Reflow a partir daqui** para recalcular as batidas seguintes. A timeline
-pode ser importada ou exportada no formato JSON.
+The audio is the single source of truth for timing: play, pause, seek, and
+playback rate all keep the beat count and the dancers' movement locked to the
+track's timeline.
 
-Os trilhos de seções e zabumba compartilham a mesma janela temporal do
-waveform. O controle **Zoom** amplia a forma de onda; a régua, os marcadores,
-o playhead e o arraste acompanham automaticamente o intervalo visível.
+## Tools Annotator
 
-Os timestamps usam segundos desde o início do MP3. As marcações manuais e
-corrigidas são preservadas quando a previsão é recalculada.
+The `/tools/annotator` route accepts a local MP3 and its metadata without
+uploading the file to any server. Editor shortcuts:
 
-## Requisitos
+- `Space`: play or pause;
+- `Z`: mark a beat on the top of the zabumba;
+- `C`: mark the camarão (bottom stroke);
+- `A`: start an `accordion-only` section;
+- `R`: start a `rhythm` section;
+- `Delete` or `Backspace`: remove the selected marker.
 
-- Node.js 20.19 ou mais recente
-- npm 10 ou mais recente
-- uma conta Cloudflare para publicar
+After marking two `Z · Z · Z · C` cycles, use **Prever até o fim** (predict to
+the end). Drag a prediction and use **Reflow a partir daqui** to recompute the
+following beats. The timeline and the matching catalog entry can both be
+exported as JSON.
 
-## Desenvolvimento
+### Adding a track to the catalog
+
+1. Open `/tools/annotator`, pick the MP3, and fill in ID, title, artist, and rhythm.
+2. Mark the track, or import a compatible timeline.
+3. Export the timeline and the catalog entry.
+4. Copy the MP3 to `public/tracks/<id>/audio.mp3`.
+5. Copy the timeline to `public/tracks/<id>/timeline.json`.
+6. Append the generated entry to the `public/catalog.json` array.
+
+In V0 these files are added to the repository by hand. The catalog layer can
+later be swapped for a real API without rewriting the home page.
+
+## Requirements
+
+- Node.js 20.19 or newer
+- npm 10 or newer
+- a Cloudflare account for deployment
+
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-O Vite informará o endereço local e recarregará a página após alterações no
-código.
+Vite prints the local address and reloads the page on code changes.
 
-## Verificações
+## Checks
 
 ```bash
 npm test -- --run
@@ -53,9 +74,9 @@ npm run lint
 npm run build
 ```
 
-O build de produção é escrito em `dist/`.
+The production build is written to `dist/`.
 
-## Preview local
+## Local preview
 
 ```bash
 npm run build
@@ -64,27 +85,27 @@ npm run preview
 
 ## Cloudflare Workers
 
-O arquivo `wrangler.jsonc` envia `dist/` para Workers Static Assets. A opção
-`not_found_handling: "single-page-application"` devolve `index.html` para
-navegações que não correspondem a um arquivo, deixando o projeto pronto para
-rotas client-side futuras.
+`wrangler.jsonc` ships `dist/` through Workers Static Assets.
+`not_found_handling: "single-page-application"` serves `index.html` for
+navigations that don't match a file, so `/tools/annotator` can be opened
+directly.
 
-Valide o pacote sem publicar:
+Validate the bundle without publishing:
 
 ```bash
 npm run deploy:dry-run
 ```
 
-Antes do primeiro deploy, autentique o Wrangler:
+Before the first deploy, authenticate Wrangler:
 
 ```bash
 npx wrangler login
 ```
 
-Depois publique:
+Then publish:
 
 ```bash
 npm run deploy
 ```
 
-O script de deploy sempre executa um build novo antes da publicação.
+The deploy script always runs a fresh build before publishing.
