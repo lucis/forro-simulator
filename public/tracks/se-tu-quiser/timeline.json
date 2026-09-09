@@ -1,0 +1,4094 @@
+{
+  "trackId": "se-tu-quiser",
+  "rhythmId": "xote",
+  "events": [
+    {
+      "id": "marker-59a76b18-85d2-48c2-8ea8-de5361100118",
+      "type": "rhythm-marker",
+      "t": 2.022394,
+      "slotId": "z1",
+      "source": "manual"
+    },
+    {
+      "id": "marker-6ff3af3b-cf3c-4771-896e-8ad2fa3e3038",
+      "type": "rhythm-marker",
+      "t": 2.397993,
+      "slotId": "z2",
+      "source": "manual"
+    },
+    {
+      "id": "marker-5dca791d-fdc1-446c-a946-ec1133b64313",
+      "type": "rhythm-marker",
+      "t": 2.726054,
+      "slotId": "z3",
+      "source": "manual"
+    },
+    {
+      "id": "marker-64e622be-46bd-46d9-9969-01153cf58349",
+      "type": "rhythm-marker",
+      "t": 3.046221,
+      "slotId": "camarao",
+      "source": "manual"
+    },
+    {
+      "id": "marker-4ac876e0-0497-4b03-b90a-08bce6787031",
+      "type": "rhythm-marker",
+      "t": 3.482033,
+      "slotId": "z1",
+      "source": "manual"
+    },
+    {
+      "id": "marker-a05259bf-6335-4362-bfc6-30b0e0a8e44d",
+      "type": "rhythm-marker",
+      "t": 3.822977,
+      "slotId": "z2",
+      "source": "manual"
+    },
+    {
+      "id": "marker-5c21d4b9-0473-4d71-a903-968bd2315800",
+      "type": "rhythm-marker",
+      "t": 4.186759,
+      "slotId": "z3",
+      "source": "manual"
+    },
+    {
+      "id": "marker-9bd0c62e-3f78-430c-877a-9f6abca3631e",
+      "type": "rhythm-marker",
+      "t": 4.541264,
+      "slotId": "camarao",
+      "source": "manual"
+    },
+    {
+      "id": "predicted-z1-4941672",
+      "type": "rhythm-marker",
+      "t": 4.9416720000000005,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-5299944",
+      "type": "rhythm-marker",
+      "t": 5.2999435,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-5645865",
+      "type": "rhythm-marker",
+      "t": 5.645865000000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-5983201",
+      "type": "rhythm-marker",
+      "t": 5.983201000000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-6401311",
+      "type": "rhythm-marker",
+      "t": 6.401311000000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-6759583",
+      "type": "rhythm-marker",
+      "t": 6.7595825000000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-7105504",
+      "type": "rhythm-marker",
+      "t": 7.105504000000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-7442840",
+      "type": "rhythm-marker",
+      "t": 7.44284,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-7860950",
+      "type": "rhythm-marker",
+      "t": 7.860950000000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-8219222",
+      "type": "rhythm-marker",
+      "t": 8.219221500000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-8565143",
+      "type": "rhythm-marker",
+      "t": 8.565143,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-8902479",
+      "type": "rhythm-marker",
+      "t": 8.902479000000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-9320589",
+      "type": "rhythm-marker",
+      "t": 9.320589000000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-9678861",
+      "type": "rhythm-marker",
+      "t": 9.678860500000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-10024782",
+      "type": "rhythm-marker",
+      "t": 10.024782000000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-10362118",
+      "type": "rhythm-marker",
+      "t": 10.362118000000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-10780228",
+      "type": "rhythm-marker",
+      "t": 10.780228000000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-11138500",
+      "type": "rhythm-marker",
+      "t": 11.138499500000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-11484421",
+      "type": "rhythm-marker",
+      "t": 11.484421000000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-11821757",
+      "type": "rhythm-marker",
+      "t": 11.821757000000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-12239867",
+      "type": "rhythm-marker",
+      "t": 12.239867,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-12598139",
+      "type": "rhythm-marker",
+      "t": 12.598138500000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-12944060",
+      "type": "rhythm-marker",
+      "t": 12.94406,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-13281396",
+      "type": "rhythm-marker",
+      "t": 13.281396,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-13699506",
+      "type": "rhythm-marker",
+      "t": 13.699506,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-14057778",
+      "type": "rhythm-marker",
+      "t": 14.0577775,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-14403699",
+      "type": "rhythm-marker",
+      "t": 14.403699,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-14741035",
+      "type": "rhythm-marker",
+      "t": 14.741035,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-15159145",
+      "type": "rhythm-marker",
+      "t": 15.159144999999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-15517417",
+      "type": "rhythm-marker",
+      "t": 15.5174165,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-15863338",
+      "type": "rhythm-marker",
+      "t": 15.863337999999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-16200674",
+      "type": "rhythm-marker",
+      "t": 16.200674,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-16618784",
+      "type": "rhythm-marker",
+      "t": 16.618783999999998,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-16977056",
+      "type": "rhythm-marker",
+      "t": 16.9770555,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-17322977",
+      "type": "rhythm-marker",
+      "t": 17.322976999999998,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-17660313",
+      "type": "rhythm-marker",
+      "t": 17.660313,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-18078423",
+      "type": "rhythm-marker",
+      "t": 18.078422999999997,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-18436694",
+      "type": "rhythm-marker",
+      "t": 18.436694499999998,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-18782616",
+      "type": "rhythm-marker",
+      "t": 18.782615999999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-19119952",
+      "type": "rhythm-marker",
+      "t": 19.119951999999998,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-19538062",
+      "type": "rhythm-marker",
+      "t": 19.538061999999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-19896333",
+      "type": "rhythm-marker",
+      "t": 19.896333499999997,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-20242255",
+      "type": "rhythm-marker",
+      "t": 20.242254999999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-20579591",
+      "type": "rhythm-marker",
+      "t": 20.579590999999997,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-20997701",
+      "type": "rhythm-marker",
+      "t": 20.997700999999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-21355972",
+      "type": "rhythm-marker",
+      "t": 21.355972499999996,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-21701894",
+      "type": "rhythm-marker",
+      "t": 21.701893999999996,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-22039230",
+      "type": "rhythm-marker",
+      "t": 22.039229999999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-22457340",
+      "type": "rhythm-marker",
+      "t": 22.457339999999995,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-22815611",
+      "type": "rhythm-marker",
+      "t": 22.815611499999996,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-23161533",
+      "type": "rhythm-marker",
+      "t": 23.161532999999995,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-23498869",
+      "type": "rhythm-marker",
+      "t": 23.498868999999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-23916979",
+      "type": "rhythm-marker",
+      "t": 23.916978999999994,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-24275250",
+      "type": "rhythm-marker",
+      "t": 24.275250499999995,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-24621172",
+      "type": "rhythm-marker",
+      "t": 24.621171999999994,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-24958508",
+      "type": "rhythm-marker",
+      "t": 24.958507999999995,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-25376618",
+      "type": "rhythm-marker",
+      "t": 25.376617999999993,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-25734889",
+      "type": "rhythm-marker",
+      "t": 25.734889499999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-26080811",
+      "type": "rhythm-marker",
+      "t": 26.080810999999994,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-26418147",
+      "type": "rhythm-marker",
+      "t": 26.418146999999994,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-26836257",
+      "type": "rhythm-marker",
+      "t": 26.836256999999993,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-27194528",
+      "type": "rhythm-marker",
+      "t": 27.194528499999993,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-27540450",
+      "type": "rhythm-marker",
+      "t": 27.540449999999993,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-27877786",
+      "type": "rhythm-marker",
+      "t": 27.877785999999993,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-28295896",
+      "type": "rhythm-marker",
+      "t": 28.295895999999992,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-28654167",
+      "type": "rhythm-marker",
+      "t": 28.654167499999993,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-29000089",
+      "type": "rhythm-marker",
+      "t": 29.000088999999992,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-29337425",
+      "type": "rhythm-marker",
+      "t": 29.337424999999993,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-29755535",
+      "type": "rhythm-marker",
+      "t": 29.75553499999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-30113806",
+      "type": "rhythm-marker",
+      "t": 30.113806499999992,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-30459728",
+      "type": "rhythm-marker",
+      "t": 30.45972799999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-30797064",
+      "type": "rhythm-marker",
+      "t": 30.797063999999992,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-31215174",
+      "type": "rhythm-marker",
+      "t": 31.21517399999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-31573445",
+      "type": "rhythm-marker",
+      "t": 31.57344549999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-31919367",
+      "type": "rhythm-marker",
+      "t": 31.91936699999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-32256703",
+      "type": "rhythm-marker",
+      "t": 32.25670299999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-32674813",
+      "type": "rhythm-marker",
+      "t": 32.67481299999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-33033084",
+      "type": "rhythm-marker",
+      "t": 33.033084499999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-33379006",
+      "type": "rhythm-marker",
+      "t": 33.379006,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-33716342",
+      "type": "rhythm-marker",
+      "t": 33.71634199999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-34134452",
+      "type": "rhythm-marker",
+      "t": 34.134451999999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-34492724",
+      "type": "rhythm-marker",
+      "t": 34.4927235,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-34838645",
+      "type": "rhythm-marker",
+      "t": 34.838645,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-35175981",
+      "type": "rhythm-marker",
+      "t": 35.17598099999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-35594091",
+      "type": "rhythm-marker",
+      "t": 35.594091,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-35952363",
+      "type": "rhythm-marker",
+      "t": 35.9523625,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-36298284",
+      "type": "rhythm-marker",
+      "t": 36.298284,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-36635620",
+      "type": "rhythm-marker",
+      "t": 36.635619999999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-37053730",
+      "type": "rhythm-marker",
+      "t": 37.05373,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-37412002",
+      "type": "rhythm-marker",
+      "t": 37.4120015,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-37757923",
+      "type": "rhythm-marker",
+      "t": 37.757923000000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-38095259",
+      "type": "rhythm-marker",
+      "t": 38.095259,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-38513369",
+      "type": "rhythm-marker",
+      "t": 38.513369000000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-38871641",
+      "type": "rhythm-marker",
+      "t": 38.871640500000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-39217562",
+      "type": "rhythm-marker",
+      "t": 39.21756200000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-39554898",
+      "type": "rhythm-marker",
+      "t": 39.554898,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-39973008",
+      "type": "rhythm-marker",
+      "t": 39.97300800000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-40331280",
+      "type": "rhythm-marker",
+      "t": 40.33127950000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-40677201",
+      "type": "rhythm-marker",
+      "t": 40.67720100000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-41014537",
+      "type": "rhythm-marker",
+      "t": 41.014537000000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-41432647",
+      "type": "rhythm-marker",
+      "t": 41.43264700000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-41790919",
+      "type": "rhythm-marker",
+      "t": 41.79091850000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-42136840",
+      "type": "rhythm-marker",
+      "t": 42.136840000000014,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-42474176",
+      "type": "rhythm-marker",
+      "t": 42.47417600000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-42892286",
+      "type": "rhythm-marker",
+      "t": 42.89228600000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-43250558",
+      "type": "rhythm-marker",
+      "t": 43.25055750000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-43596479",
+      "type": "rhythm-marker",
+      "t": 43.596479000000016,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-43933815",
+      "type": "rhythm-marker",
+      "t": 43.93381500000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-44351925",
+      "type": "rhythm-marker",
+      "t": 44.351925000000016,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-44710197",
+      "type": "rhythm-marker",
+      "t": 44.710196500000016,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-45056118",
+      "type": "rhythm-marker",
+      "t": 45.05611800000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-45393454",
+      "type": "rhythm-marker",
+      "t": 45.39345400000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-45811564",
+      "type": "rhythm-marker",
+      "t": 45.81156400000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-46169836",
+      "type": "rhythm-marker",
+      "t": 46.16983550000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-46515757",
+      "type": "rhythm-marker",
+      "t": 46.51575700000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-46853093",
+      "type": "rhythm-marker",
+      "t": 46.853093000000015,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-47271203",
+      "type": "rhythm-marker",
+      "t": 47.27120300000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-47629475",
+      "type": "rhythm-marker",
+      "t": 47.62947450000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-47975396",
+      "type": "rhythm-marker",
+      "t": 47.975396000000025,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-48312732",
+      "type": "rhythm-marker",
+      "t": 48.31273200000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-48730842",
+      "type": "rhythm-marker",
+      "t": 48.730842000000024,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-49089114",
+      "type": "rhythm-marker",
+      "t": 49.089113500000025,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-49435035",
+      "type": "rhythm-marker",
+      "t": 49.43503500000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-49772371",
+      "type": "rhythm-marker",
+      "t": 49.77237100000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-50190481",
+      "type": "rhythm-marker",
+      "t": 50.19048100000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-50548753",
+      "type": "rhythm-marker",
+      "t": 50.54875250000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-50894674",
+      "type": "rhythm-marker",
+      "t": 50.89467400000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-51232010",
+      "type": "rhythm-marker",
+      "t": 51.232010000000024,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-51650120",
+      "type": "rhythm-marker",
+      "t": 51.65012000000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-52008392",
+      "type": "rhythm-marker",
+      "t": 52.00839150000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-52354313",
+      "type": "rhythm-marker",
+      "t": 52.35431300000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-52691649",
+      "type": "rhythm-marker",
+      "t": 52.69164900000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-53109759",
+      "type": "rhythm-marker",
+      "t": 53.10975900000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-53468031",
+      "type": "rhythm-marker",
+      "t": 53.46803050000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-53813952",
+      "type": "rhythm-marker",
+      "t": 53.813952000000036,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-54151288",
+      "type": "rhythm-marker",
+      "t": 54.15128800000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-54569398",
+      "type": "rhythm-marker",
+      "t": 54.569398000000035,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-54927670",
+      "type": "rhythm-marker",
+      "t": 54.927669500000036,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-55273591",
+      "type": "rhythm-marker",
+      "t": 55.27359100000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-55610927",
+      "type": "rhythm-marker",
+      "t": 55.61092700000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-56029037",
+      "type": "rhythm-marker",
+      "t": 56.02903700000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-56387309",
+      "type": "rhythm-marker",
+      "t": 56.38730850000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-56733230",
+      "type": "rhythm-marker",
+      "t": 56.73323000000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-57070566",
+      "type": "rhythm-marker",
+      "t": 57.070566000000035,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-57488676",
+      "type": "rhythm-marker",
+      "t": 57.48867600000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-57846948",
+      "type": "rhythm-marker",
+      "t": 57.84694750000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-58192869",
+      "type": "rhythm-marker",
+      "t": 58.192869000000044,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-58530205",
+      "type": "rhythm-marker",
+      "t": 58.53020500000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-58948315",
+      "type": "rhythm-marker",
+      "t": 58.94831500000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-59306587",
+      "type": "rhythm-marker",
+      "t": 59.306586500000044,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-59652508",
+      "type": "rhythm-marker",
+      "t": 59.65250800000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-59989844",
+      "type": "rhythm-marker",
+      "t": 59.98984400000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-60407954",
+      "type": "rhythm-marker",
+      "t": 60.407954000000046,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-60766226",
+      "type": "rhythm-marker",
+      "t": 60.76622550000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-61112147",
+      "type": "rhythm-marker",
+      "t": 61.11214700000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-61449483",
+      "type": "rhythm-marker",
+      "t": 61.44948300000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-61867593",
+      "type": "rhythm-marker",
+      "t": 61.86759300000005,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-62225865",
+      "type": "rhythm-marker",
+      "t": 62.22586450000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-62571786",
+      "type": "rhythm-marker",
+      "t": 62.57178600000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-62909122",
+      "type": "rhythm-marker",
+      "t": 62.909122000000046,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-63327232",
+      "type": "rhythm-marker",
+      "t": 63.32723200000005,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-63685504",
+      "type": "rhythm-marker",
+      "t": 63.68550350000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-64031425",
+      "type": "rhythm-marker",
+      "t": 64.03142500000006,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-64368761",
+      "type": "rhythm-marker",
+      "t": 64.36876100000005,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-64786871",
+      "type": "rhythm-marker",
+      "t": 64.78687100000005,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-65145143",
+      "type": "rhythm-marker",
+      "t": 65.14514250000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-65491064",
+      "type": "rhythm-marker",
+      "t": 65.49106400000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-65828400",
+      "type": "rhythm-marker",
+      "t": 65.82840000000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-66246510",
+      "type": "rhythm-marker",
+      "t": 66.24651000000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-66604782",
+      "type": "rhythm-marker",
+      "t": 66.60478150000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-66950703",
+      "type": "rhythm-marker",
+      "t": 66.95070300000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-67288039",
+      "type": "rhythm-marker",
+      "t": 67.28803900000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-67706149",
+      "type": "rhythm-marker",
+      "t": 67.70614900000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-68064421",
+      "type": "rhythm-marker",
+      "t": 68.06442050000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-68410342",
+      "type": "rhythm-marker",
+      "t": 68.41034200000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-68747678",
+      "type": "rhythm-marker",
+      "t": 68.74767800000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-69165788",
+      "type": "rhythm-marker",
+      "t": 69.16578800000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-69524060",
+      "type": "rhythm-marker",
+      "t": 69.52405950000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-69869981",
+      "type": "rhythm-marker",
+      "t": 69.86998100000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-70207317",
+      "type": "rhythm-marker",
+      "t": 70.20731700000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-70625427",
+      "type": "rhythm-marker",
+      "t": 70.62542700000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-70983699",
+      "type": "rhythm-marker",
+      "t": 70.98369850000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-71329620",
+      "type": "rhythm-marker",
+      "t": 71.32962000000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-71666956",
+      "type": "rhythm-marker",
+      "t": 71.66695600000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-72085066",
+      "type": "rhythm-marker",
+      "t": 72.08506600000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-72443338",
+      "type": "rhythm-marker",
+      "t": 72.44333750000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-72789259",
+      "type": "rhythm-marker",
+      "t": 72.78925900000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-73126595",
+      "type": "rhythm-marker",
+      "t": 73.12659500000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-73544705",
+      "type": "rhythm-marker",
+      "t": 73.54470500000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-73902977",
+      "type": "rhythm-marker",
+      "t": 73.90297650000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-74248898",
+      "type": "rhythm-marker",
+      "t": 74.24889800000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-74586234",
+      "type": "rhythm-marker",
+      "t": 74.58623400000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-75004344",
+      "type": "rhythm-marker",
+      "t": 75.00434400000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-75362616",
+      "type": "rhythm-marker",
+      "t": 75.36261550000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-75708537",
+      "type": "rhythm-marker",
+      "t": 75.70853700000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-76045873",
+      "type": "rhythm-marker",
+      "t": 76.04587300000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-76463983",
+      "type": "rhythm-marker",
+      "t": 76.46398300000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-76822255",
+      "type": "rhythm-marker",
+      "t": 76.82225450000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-77168176",
+      "type": "rhythm-marker",
+      "t": 77.16817600000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-77505512",
+      "type": "rhythm-marker",
+      "t": 77.50551200000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-77923622",
+      "type": "rhythm-marker",
+      "t": 77.92362200000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-78281894",
+      "type": "rhythm-marker",
+      "t": 78.28189350000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-78627815",
+      "type": "rhythm-marker",
+      "t": 78.62781500000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-78965151",
+      "type": "rhythm-marker",
+      "t": 78.965151,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-79383261",
+      "type": "rhythm-marker",
+      "t": 79.383261,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-79741533",
+      "type": "rhythm-marker",
+      "t": 79.7415325,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-80087454",
+      "type": "rhythm-marker",
+      "t": 80.08745400000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-80424790",
+      "type": "rhythm-marker",
+      "t": 80.42479,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-80842900",
+      "type": "rhythm-marker",
+      "t": 80.8429,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-81201172",
+      "type": "rhythm-marker",
+      "t": 81.2011715,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-81547093",
+      "type": "rhythm-marker",
+      "t": 81.547093,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-81884429",
+      "type": "rhythm-marker",
+      "t": 81.884429,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-82302539",
+      "type": "rhythm-marker",
+      "t": 82.302539,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-82660811",
+      "type": "rhythm-marker",
+      "t": 82.6608105,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-83006732",
+      "type": "rhythm-marker",
+      "t": 83.006732,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-83344068",
+      "type": "rhythm-marker",
+      "t": 83.344068,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-83762178",
+      "type": "rhythm-marker",
+      "t": 83.76217799999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-84120449",
+      "type": "rhythm-marker",
+      "t": 84.12044949999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-84466371",
+      "type": "rhythm-marker",
+      "t": 84.466371,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-84803707",
+      "type": "rhythm-marker",
+      "t": 84.80370699999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-85221817",
+      "type": "rhythm-marker",
+      "t": 85.22181699999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-85580088",
+      "type": "rhythm-marker",
+      "t": 85.58008849999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-85926010",
+      "type": "rhythm-marker",
+      "t": 85.92600999999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-86263346",
+      "type": "rhythm-marker",
+      "t": 86.26334599999998,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-86681456",
+      "type": "rhythm-marker",
+      "t": 86.68145599999998,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-87039727",
+      "type": "rhythm-marker",
+      "t": 87.03972749999998,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-87385649",
+      "type": "rhythm-marker",
+      "t": 87.38564899999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-87722985",
+      "type": "rhythm-marker",
+      "t": 87.72298499999998,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-88141095",
+      "type": "rhythm-marker",
+      "t": 88.14109499999998,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-88499366",
+      "type": "rhythm-marker",
+      "t": 88.49936649999998,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-88845288",
+      "type": "rhythm-marker",
+      "t": 88.84528799999998,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-89182624",
+      "type": "rhythm-marker",
+      "t": 89.18262399999998,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-89600734",
+      "type": "rhythm-marker",
+      "t": 89.60073399999997,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-89959005",
+      "type": "rhythm-marker",
+      "t": 89.95900549999998,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-90304927",
+      "type": "rhythm-marker",
+      "t": 90.30492699999998,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-90642263",
+      "type": "rhythm-marker",
+      "t": 90.64226299999997,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-91060373",
+      "type": "rhythm-marker",
+      "t": 91.06037299999997,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-91418644",
+      "type": "rhythm-marker",
+      "t": 91.41864449999997,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-91764566",
+      "type": "rhythm-marker",
+      "t": 91.76456599999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-92101902",
+      "type": "rhythm-marker",
+      "t": 92.10190199999997,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-92520012",
+      "type": "rhythm-marker",
+      "t": 92.52001199999997,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-92878283",
+      "type": "rhythm-marker",
+      "t": 92.87828349999997,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-93224205",
+      "type": "rhythm-marker",
+      "t": 93.22420499999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-93561541",
+      "type": "rhythm-marker",
+      "t": 93.56154099999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-93979651",
+      "type": "rhythm-marker",
+      "t": 93.97965099999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-94337922",
+      "type": "rhythm-marker",
+      "t": 94.33792249999996,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-94683844",
+      "type": "rhythm-marker",
+      "t": 94.68384399999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-95021180",
+      "type": "rhythm-marker",
+      "t": 95.02117999999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-95439290",
+      "type": "rhythm-marker",
+      "t": 95.43928999999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-95797561",
+      "type": "rhythm-marker",
+      "t": 95.79756149999996,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-96143483",
+      "type": "rhythm-marker",
+      "t": 96.14348299999996,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-96480819",
+      "type": "rhythm-marker",
+      "t": 96.48081899999995,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-96898929",
+      "type": "rhythm-marker",
+      "t": 96.89892899999995,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-97257200",
+      "type": "rhythm-marker",
+      "t": 97.25720049999995,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-97603122",
+      "type": "rhythm-marker",
+      "t": 97.60312199999996,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-97940458",
+      "type": "rhythm-marker",
+      "t": 97.94045799999995,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-98358568",
+      "type": "rhythm-marker",
+      "t": 98.35856799999995,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-98716839",
+      "type": "rhythm-marker",
+      "t": 98.71683949999995,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-99062761",
+      "type": "rhythm-marker",
+      "t": 99.06276099999995,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-99400097",
+      "type": "rhythm-marker",
+      "t": 99.40009699999995,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-99818207",
+      "type": "rhythm-marker",
+      "t": 99.81820699999994,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-100176478",
+      "type": "rhythm-marker",
+      "t": 100.17647849999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-100522400",
+      "type": "rhythm-marker",
+      "t": 100.52239999999995,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-100859736",
+      "type": "rhythm-marker",
+      "t": 100.85973599999994,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-101277846",
+      "type": "rhythm-marker",
+      "t": 101.27784599999994,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-101636117",
+      "type": "rhythm-marker",
+      "t": 101.63611749999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-101982039",
+      "type": "rhythm-marker",
+      "t": 101.98203899999994,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-102319375",
+      "type": "rhythm-marker",
+      "t": 102.31937499999994,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-102737485",
+      "type": "rhythm-marker",
+      "t": 102.73748499999994,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-103095756",
+      "type": "rhythm-marker",
+      "t": 103.09575649999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-103441678",
+      "type": "rhythm-marker",
+      "t": 103.44167799999994,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-103779014",
+      "type": "rhythm-marker",
+      "t": 103.77901399999993,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-104197124",
+      "type": "rhythm-marker",
+      "t": 104.19712399999993,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-104555395",
+      "type": "rhythm-marker",
+      "t": 104.55539549999993,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-104901317",
+      "type": "rhythm-marker",
+      "t": 104.90131699999993,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-105238653",
+      "type": "rhythm-marker",
+      "t": 105.23865299999993,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-105656763",
+      "type": "rhythm-marker",
+      "t": 105.65676299999993,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-106015034",
+      "type": "rhythm-marker",
+      "t": 106.01503449999993,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-106360956",
+      "type": "rhythm-marker",
+      "t": 106.36095599999993,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-106698292",
+      "type": "rhythm-marker",
+      "t": 106.69829199999992,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-107116402",
+      "type": "rhythm-marker",
+      "t": 107.11640199999992,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-107474673",
+      "type": "rhythm-marker",
+      "t": 107.47467349999992,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-107820595",
+      "type": "rhythm-marker",
+      "t": 107.82059499999993,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-108157931",
+      "type": "rhythm-marker",
+      "t": 108.15793099999992,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-108576041",
+      "type": "rhythm-marker",
+      "t": 108.57604099999992,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-108934312",
+      "type": "rhythm-marker",
+      "t": 108.93431249999992,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-109280234",
+      "type": "rhythm-marker",
+      "t": 109.28023399999992,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-109617570",
+      "type": "rhythm-marker",
+      "t": 109.61756999999992,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-110035680",
+      "type": "rhythm-marker",
+      "t": 110.03567999999991,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-110393951",
+      "type": "rhythm-marker",
+      "t": 110.39395149999991,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-110739873",
+      "type": "rhythm-marker",
+      "t": 110.73987299999992,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-111077209",
+      "type": "rhythm-marker",
+      "t": 111.07720899999991,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-111495319",
+      "type": "rhythm-marker",
+      "t": 111.49531899999991,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-111853590",
+      "type": "rhythm-marker",
+      "t": 111.85359049999991,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-112199512",
+      "type": "rhythm-marker",
+      "t": 112.19951199999991,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-112536848",
+      "type": "rhythm-marker",
+      "t": 112.5368479999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-112954958",
+      "type": "rhythm-marker",
+      "t": 112.9549579999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-113313229",
+      "type": "rhythm-marker",
+      "t": 113.3132294999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-113659151",
+      "type": "rhythm-marker",
+      "t": 113.65915099999991,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-113996487",
+      "type": "rhythm-marker",
+      "t": 113.9964869999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-114414597",
+      "type": "rhythm-marker",
+      "t": 114.4145969999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-114772868",
+      "type": "rhythm-marker",
+      "t": 114.7728684999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-115118790",
+      "type": "rhythm-marker",
+      "t": 115.1187899999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-115456126",
+      "type": "rhythm-marker",
+      "t": 115.4561259999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-115874236",
+      "type": "rhythm-marker",
+      "t": 115.8742359999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-116232507",
+      "type": "rhythm-marker",
+      "t": 116.2325074999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-116578429",
+      "type": "rhythm-marker",
+      "t": 116.5784289999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-116915765",
+      "type": "rhythm-marker",
+      "t": 116.9157649999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-117333875",
+      "type": "rhythm-marker",
+      "t": 117.33387499999989,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-117692146",
+      "type": "rhythm-marker",
+      "t": 117.6921464999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-118038068",
+      "type": "rhythm-marker",
+      "t": 118.0380679999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-118375404",
+      "type": "rhythm-marker",
+      "t": 118.37540399999989,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-118793514",
+      "type": "rhythm-marker",
+      "t": 118.79351399999989,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-119151785",
+      "type": "rhythm-marker",
+      "t": 119.15178549999989,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-119497707",
+      "type": "rhythm-marker",
+      "t": 119.49770699999989,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-119835043",
+      "type": "rhythm-marker",
+      "t": 119.83504299999989,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-120253153",
+      "type": "rhythm-marker",
+      "t": 120.25315299999988,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-120611424",
+      "type": "rhythm-marker",
+      "t": 120.61142449999988,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-120957346",
+      "type": "rhythm-marker",
+      "t": 120.95734599999989,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-121294682",
+      "type": "rhythm-marker",
+      "t": 121.29468199999988,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-121712792",
+      "type": "rhythm-marker",
+      "t": 121.71279199999988,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-122071063",
+      "type": "rhythm-marker",
+      "t": 122.07106349999988,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-122416985",
+      "type": "rhythm-marker",
+      "t": 122.41698499999988,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-122754321",
+      "type": "rhythm-marker",
+      "t": 122.75432099999988,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-123172431",
+      "type": "rhythm-marker",
+      "t": 123.17243099999988,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-123530702",
+      "type": "rhythm-marker",
+      "t": 123.53070249999988,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-123876624",
+      "type": "rhythm-marker",
+      "t": 123.87662399999988,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-124213960",
+      "type": "rhythm-marker",
+      "t": 124.21395999999987,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-124632070",
+      "type": "rhythm-marker",
+      "t": 124.63206999999987,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-124990341",
+      "type": "rhythm-marker",
+      "t": 124.99034149999987,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-125336263",
+      "type": "rhythm-marker",
+      "t": 125.33626299999987,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-125673599",
+      "type": "rhythm-marker",
+      "t": 125.67359899999987,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-126091709",
+      "type": "rhythm-marker",
+      "t": 126.09170899999987,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-126449980",
+      "type": "rhythm-marker",
+      "t": 126.44998049999987,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-126795902",
+      "type": "rhythm-marker",
+      "t": 126.79590199999987,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-127133238",
+      "type": "rhythm-marker",
+      "t": 127.13323799999986,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-127551348",
+      "type": "rhythm-marker",
+      "t": 127.55134799999986,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-127909619",
+      "type": "rhythm-marker",
+      "t": 127.90961949999986,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-128255541",
+      "type": "rhythm-marker",
+      "t": 128.25554099999985,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-128592877",
+      "type": "rhythm-marker",
+      "t": 128.59287699999987,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-129010987",
+      "type": "rhythm-marker",
+      "t": 129.01098699999986,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-129369258",
+      "type": "rhythm-marker",
+      "t": 129.36925849999986,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-129715180",
+      "type": "rhythm-marker",
+      "t": 129.71517999999986,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-130052516",
+      "type": "rhythm-marker",
+      "t": 130.05251599999986,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-130470626",
+      "type": "rhythm-marker",
+      "t": 130.47062599999987,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-130828897",
+      "type": "rhythm-marker",
+      "t": 130.82889749999987,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-131174819",
+      "type": "rhythm-marker",
+      "t": 131.17481899999987,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-131512155",
+      "type": "rhythm-marker",
+      "t": 131.51215499999986,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-131930265",
+      "type": "rhythm-marker",
+      "t": 131.93026499999988,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-132288536",
+      "type": "rhythm-marker",
+      "t": 132.28853649999988,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-132634458",
+      "type": "rhythm-marker",
+      "t": 132.63445799999988,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-132971794",
+      "type": "rhythm-marker",
+      "t": 132.97179399999987,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-133389904",
+      "type": "rhythm-marker",
+      "t": 133.3899039999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-133748175",
+      "type": "rhythm-marker",
+      "t": 133.7481754999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-134094097",
+      "type": "rhythm-marker",
+      "t": 134.0940969999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-134431433",
+      "type": "rhythm-marker",
+      "t": 134.43143299999988,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-134849543",
+      "type": "rhythm-marker",
+      "t": 134.8495429999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-135207814",
+      "type": "rhythm-marker",
+      "t": 135.2078144999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-135553736",
+      "type": "rhythm-marker",
+      "t": 135.5537359999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-135891072",
+      "type": "rhythm-marker",
+      "t": 135.8910719999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-136309182",
+      "type": "rhythm-marker",
+      "t": 136.3091819999999,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-136667453",
+      "type": "rhythm-marker",
+      "t": 136.6674534999999,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-137013375",
+      "type": "rhythm-marker",
+      "t": 137.0133749999999,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-137350711",
+      "type": "rhythm-marker",
+      "t": 137.3507109999999,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-137768821",
+      "type": "rhythm-marker",
+      "t": 137.76882099999992,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-138127092",
+      "type": "rhythm-marker",
+      "t": 138.12709249999992,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-138473014",
+      "type": "rhythm-marker",
+      "t": 138.47301399999992,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-138810350",
+      "type": "rhythm-marker",
+      "t": 138.81034999999991,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-139228460",
+      "type": "rhythm-marker",
+      "t": 139.22845999999993,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-139586731",
+      "type": "rhythm-marker",
+      "t": 139.58673149999993,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-139932653",
+      "type": "rhythm-marker",
+      "t": 139.93265299999993,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-140269989",
+      "type": "rhythm-marker",
+      "t": 140.26998899999992,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-140688099",
+      "type": "rhythm-marker",
+      "t": 140.68809899999994,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-141046370",
+      "type": "rhythm-marker",
+      "t": 141.04637049999994,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-141392292",
+      "type": "rhythm-marker",
+      "t": 141.39229199999994,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-141729628",
+      "type": "rhythm-marker",
+      "t": 141.72962799999993,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-142147738",
+      "type": "rhythm-marker",
+      "t": 142.14773799999995,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-142506009",
+      "type": "rhythm-marker",
+      "t": 142.50600949999995,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-142851931",
+      "type": "rhythm-marker",
+      "t": 142.85193099999995,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-143189267",
+      "type": "rhythm-marker",
+      "t": 143.18926699999994,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-143607377",
+      "type": "rhythm-marker",
+      "t": 143.60737699999996,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-143965648",
+      "type": "rhythm-marker",
+      "t": 143.96564849999996,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-144311570",
+      "type": "rhythm-marker",
+      "t": 144.31156999999996,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-144648906",
+      "type": "rhythm-marker",
+      "t": 144.64890599999995,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-145067016",
+      "type": "rhythm-marker",
+      "t": 145.06701599999997,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-145425287",
+      "type": "rhythm-marker",
+      "t": 145.42528749999997,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-145771209",
+      "type": "rhythm-marker",
+      "t": 145.77120899999997,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-146108545",
+      "type": "rhythm-marker",
+      "t": 146.10854499999996,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-146526655",
+      "type": "rhythm-marker",
+      "t": 146.52665499999998,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-146884926",
+      "type": "rhythm-marker",
+      "t": 146.88492649999998,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-147230848",
+      "type": "rhythm-marker",
+      "t": 147.23084799999998,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-147568184",
+      "type": "rhythm-marker",
+      "t": 147.56818399999997,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-147986294",
+      "type": "rhythm-marker",
+      "t": 147.986294,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-148344566",
+      "type": "rhythm-marker",
+      "t": 148.3445655,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-148690487",
+      "type": "rhythm-marker",
+      "t": 148.690487,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-149027823",
+      "type": "rhythm-marker",
+      "t": 149.02782299999998,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-149445933",
+      "type": "rhythm-marker",
+      "t": 149.445933,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-149804205",
+      "type": "rhythm-marker",
+      "t": 149.8042045,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-150150126",
+      "type": "rhythm-marker",
+      "t": 150.150126,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-150487462",
+      "type": "rhythm-marker",
+      "t": 150.487462,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-150905572",
+      "type": "rhythm-marker",
+      "t": 150.905572,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-151263844",
+      "type": "rhythm-marker",
+      "t": 151.2638435,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-151609765",
+      "type": "rhythm-marker",
+      "t": 151.609765,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-151947101",
+      "type": "rhythm-marker",
+      "t": 151.947101,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-152365211",
+      "type": "rhythm-marker",
+      "t": 152.36521100000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-152723483",
+      "type": "rhythm-marker",
+      "t": 152.72348250000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-153069404",
+      "type": "rhythm-marker",
+      "t": 153.06940400000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-153406740",
+      "type": "rhythm-marker",
+      "t": 153.40674,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-153824850",
+      "type": "rhythm-marker",
+      "t": 153.82485000000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-154183122",
+      "type": "rhythm-marker",
+      "t": 154.18312150000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-154529043",
+      "type": "rhythm-marker",
+      "t": 154.52904300000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-154866379",
+      "type": "rhythm-marker",
+      "t": 154.86637900000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-155284489",
+      "type": "rhythm-marker",
+      "t": 155.28448900000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-155642761",
+      "type": "rhythm-marker",
+      "t": 155.64276050000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-155988682",
+      "type": "rhythm-marker",
+      "t": 155.98868200000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-156326018",
+      "type": "rhythm-marker",
+      "t": 156.32601800000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-156744128",
+      "type": "rhythm-marker",
+      "t": 156.74412800000005,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-157102400",
+      "type": "rhythm-marker",
+      "t": 157.10239950000005,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-157448321",
+      "type": "rhythm-marker",
+      "t": 157.44832100000005,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-157785657",
+      "type": "rhythm-marker",
+      "t": 157.78565700000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-158203767",
+      "type": "rhythm-marker",
+      "t": 158.20376700000006,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-158562039",
+      "type": "rhythm-marker",
+      "t": 158.56203850000006,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-158907960",
+      "type": "rhythm-marker",
+      "t": 158.90796000000006,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-159245296",
+      "type": "rhythm-marker",
+      "t": 159.24529600000005,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-159663406",
+      "type": "rhythm-marker",
+      "t": 159.66340600000007,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-160021678",
+      "type": "rhythm-marker",
+      "t": 160.02167750000007,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-160367599",
+      "type": "rhythm-marker",
+      "t": 160.36759900000007,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-160704935",
+      "type": "rhythm-marker",
+      "t": 160.70493500000006,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-161123045",
+      "type": "rhythm-marker",
+      "t": 161.12304500000008,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-161481317",
+      "type": "rhythm-marker",
+      "t": 161.48131650000008,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-161827238",
+      "type": "rhythm-marker",
+      "t": 161.82723800000008,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-162164574",
+      "type": "rhythm-marker",
+      "t": 162.16457400000007,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-162582684",
+      "type": "rhythm-marker",
+      "t": 162.58268400000009,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-162940956",
+      "type": "rhythm-marker",
+      "t": 162.9409555000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-163286877",
+      "type": "rhythm-marker",
+      "t": 163.2868770000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-163624213",
+      "type": "rhythm-marker",
+      "t": 163.62421300000008,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-164042323",
+      "type": "rhythm-marker",
+      "t": 164.0423230000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-164400595",
+      "type": "rhythm-marker",
+      "t": 164.4005945000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-164746516",
+      "type": "rhythm-marker",
+      "t": 164.7465160000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-165083852",
+      "type": "rhythm-marker",
+      "t": 165.0838520000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-165501962",
+      "type": "rhythm-marker",
+      "t": 165.5019620000001,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-165860234",
+      "type": "rhythm-marker",
+      "t": 165.8602335000001,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-166206155",
+      "type": "rhythm-marker",
+      "t": 166.2061550000001,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-166543491",
+      "type": "rhythm-marker",
+      "t": 166.5434910000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-166961601",
+      "type": "rhythm-marker",
+      "t": 166.96160100000012,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-167319873",
+      "type": "rhythm-marker",
+      "t": 167.31987250000012,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-167665794",
+      "type": "rhythm-marker",
+      "t": 167.66579400000012,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-168003130",
+      "type": "rhythm-marker",
+      "t": 168.0031300000001,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-168421240",
+      "type": "rhythm-marker",
+      "t": 168.42124000000013,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-168779512",
+      "type": "rhythm-marker",
+      "t": 168.77951150000013,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-169125433",
+      "type": "rhythm-marker",
+      "t": 169.12543300000013,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-169462769",
+      "type": "rhythm-marker",
+      "t": 169.46276900000012,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-169880879",
+      "type": "rhythm-marker",
+      "t": 169.88087900000014,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-170239151",
+      "type": "rhythm-marker",
+      "t": 170.23915050000014,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-170585072",
+      "type": "rhythm-marker",
+      "t": 170.58507200000014,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-170922408",
+      "type": "rhythm-marker",
+      "t": 170.92240800000013,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-171340518",
+      "type": "rhythm-marker",
+      "t": 171.34051800000015,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-171698790",
+      "type": "rhythm-marker",
+      "t": 171.69878950000015,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-172044711",
+      "type": "rhythm-marker",
+      "t": 172.04471100000015,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-172382047",
+      "type": "rhythm-marker",
+      "t": 172.38204700000014,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-172800157",
+      "type": "rhythm-marker",
+      "t": 172.80015700000015,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-173158429",
+      "type": "rhythm-marker",
+      "t": 173.15842850000016,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-173504350",
+      "type": "rhythm-marker",
+      "t": 173.50435000000016,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-173841686",
+      "type": "rhythm-marker",
+      "t": 173.84168600000015,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-174259796",
+      "type": "rhythm-marker",
+      "t": 174.25979600000016,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-174618068",
+      "type": "rhythm-marker",
+      "t": 174.61806750000017,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-174963989",
+      "type": "rhythm-marker",
+      "t": 174.96398900000017,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-175301325",
+      "type": "rhythm-marker",
+      "t": 175.30132500000016,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-175719435",
+      "type": "rhythm-marker",
+      "t": 175.71943500000017,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-176077707",
+      "type": "rhythm-marker",
+      "t": 176.07770650000018,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-176423628",
+      "type": "rhythm-marker",
+      "t": 176.42362800000018,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-176760964",
+      "type": "rhythm-marker",
+      "t": 176.76096400000017,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-177179074",
+      "type": "rhythm-marker",
+      "t": 177.17907400000018,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-177537346",
+      "type": "rhythm-marker",
+      "t": 177.53734550000019,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-177883267",
+      "type": "rhythm-marker",
+      "t": 177.8832670000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-178220603",
+      "type": "rhythm-marker",
+      "t": 178.22060300000018,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-178638713",
+      "type": "rhythm-marker",
+      "t": 178.6387130000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-178996985",
+      "type": "rhythm-marker",
+      "t": 178.9969845000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-179342906",
+      "type": "rhythm-marker",
+      "t": 179.3429060000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-179680242",
+      "type": "rhythm-marker",
+      "t": 179.6802420000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-180098352",
+      "type": "rhythm-marker",
+      "t": 180.0983520000002,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-180456624",
+      "type": "rhythm-marker",
+      "t": 180.4566235000002,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-180802545",
+      "type": "rhythm-marker",
+      "t": 180.8025450000002,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-181139881",
+      "type": "rhythm-marker",
+      "t": 181.1398810000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-181557991",
+      "type": "rhythm-marker",
+      "t": 181.55799100000021,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-181916263",
+      "type": "rhythm-marker",
+      "t": 181.91626250000022,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-182262184",
+      "type": "rhythm-marker",
+      "t": 182.26218400000022,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-182599520",
+      "type": "rhythm-marker",
+      "t": 182.5995200000002,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-183017630",
+      "type": "rhythm-marker",
+      "t": 183.01763000000022,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-183375902",
+      "type": "rhythm-marker",
+      "t": 183.37590150000023,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-183721823",
+      "type": "rhythm-marker",
+      "t": 183.72182300000023,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-184059159",
+      "type": "rhythm-marker",
+      "t": 184.05915900000022,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-184477269",
+      "type": "rhythm-marker",
+      "t": 184.47726900000023,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-184835541",
+      "type": "rhythm-marker",
+      "t": 184.83554050000023,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-185181462",
+      "type": "rhythm-marker",
+      "t": 185.18146200000024,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-185518798",
+      "type": "rhythm-marker",
+      "t": 185.51879800000023,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-185936908",
+      "type": "rhythm-marker",
+      "t": 185.93690800000024,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-186295180",
+      "type": "rhythm-marker",
+      "t": 186.29517950000024,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-186641101",
+      "type": "rhythm-marker",
+      "t": 186.64110100000025,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-186978437",
+      "type": "rhythm-marker",
+      "t": 186.97843700000024,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-187396547",
+      "type": "rhythm-marker",
+      "t": 187.39654700000025,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-187754819",
+      "type": "rhythm-marker",
+      "t": 187.75481850000025,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-188100740",
+      "type": "rhythm-marker",
+      "t": 188.10074000000026,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-188438076",
+      "type": "rhythm-marker",
+      "t": 188.43807600000025,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-188856186",
+      "type": "rhythm-marker",
+      "t": 188.85618600000026,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-189214458",
+      "type": "rhythm-marker",
+      "t": 189.21445750000026,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-189560379",
+      "type": "rhythm-marker",
+      "t": 189.56037900000027,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-189897715",
+      "type": "rhythm-marker",
+      "t": 189.89771500000026,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-190315825",
+      "type": "rhythm-marker",
+      "t": 190.31582500000027,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-190674097",
+      "type": "rhythm-marker",
+      "t": 190.67409650000027,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-191020018",
+      "type": "rhythm-marker",
+      "t": 191.02001800000028,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-191357354",
+      "type": "rhythm-marker",
+      "t": 191.35735400000027,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-191775464",
+      "type": "rhythm-marker",
+      "t": 191.77546400000028,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-192133736",
+      "type": "rhythm-marker",
+      "t": 192.13373550000028,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-192479657",
+      "type": "rhythm-marker",
+      "t": 192.4796570000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-192816993",
+      "type": "rhythm-marker",
+      "t": 192.81699300000028,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-193235103",
+      "type": "rhythm-marker",
+      "t": 193.2351030000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-193593375",
+      "type": "rhythm-marker",
+      "t": 193.5933745000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-193939296",
+      "type": "rhythm-marker",
+      "t": 193.9392960000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-194276632",
+      "type": "rhythm-marker",
+      "t": 194.2766320000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-194694742",
+      "type": "rhythm-marker",
+      "t": 194.6947420000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-195053014",
+      "type": "rhythm-marker",
+      "t": 195.0530135000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-195398935",
+      "type": "rhythm-marker",
+      "t": 195.3989350000003,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-195736271",
+      "type": "rhythm-marker",
+      "t": 195.7362710000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-196154381",
+      "type": "rhythm-marker",
+      "t": 196.1543810000003,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-196512653",
+      "type": "rhythm-marker",
+      "t": 196.5126525000003,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-196858574",
+      "type": "rhythm-marker",
+      "t": 196.85857400000032,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-197195910",
+      "type": "rhythm-marker",
+      "t": 197.1959100000003,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-197614020",
+      "type": "rhythm-marker",
+      "t": 197.61402000000032,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-197972292",
+      "type": "rhythm-marker",
+      "t": 197.97229150000032,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-198318213",
+      "type": "rhythm-marker",
+      "t": 198.31821300000033,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-198655549",
+      "type": "rhythm-marker",
+      "t": 198.65554900000032,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-199073659",
+      "type": "rhythm-marker",
+      "t": 199.07365900000033,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-199431931",
+      "type": "rhythm-marker",
+      "t": 199.43193050000033,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-199777852",
+      "type": "rhythm-marker",
+      "t": 199.77785200000034,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-200115188",
+      "type": "rhythm-marker",
+      "t": 200.11518800000033,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-200533298",
+      "type": "rhythm-marker",
+      "t": 200.53329800000034,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-200891570",
+      "type": "rhythm-marker",
+      "t": 200.89156950000034,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-201237491",
+      "type": "rhythm-marker",
+      "t": 201.23749100000035,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-201574827",
+      "type": "rhythm-marker",
+      "t": 201.57482700000034,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-201992937",
+      "type": "rhythm-marker",
+      "t": 201.99293700000035,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-202351209",
+      "type": "rhythm-marker",
+      "t": 202.35120850000035,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-202697130",
+      "type": "rhythm-marker",
+      "t": 202.69713000000036,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-203034466",
+      "type": "rhythm-marker",
+      "t": 203.03446600000035,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-203452576",
+      "type": "rhythm-marker",
+      "t": 203.45257600000036,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-203810848",
+      "type": "rhythm-marker",
+      "t": 203.81084750000036,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-204156769",
+      "type": "rhythm-marker",
+      "t": 204.15676900000037,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-204494105",
+      "type": "rhythm-marker",
+      "t": 204.49410500000036,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-204912215",
+      "type": "rhythm-marker",
+      "t": 204.91221500000037,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-205270487",
+      "type": "rhythm-marker",
+      "t": 205.27048650000037,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-205616408",
+      "type": "rhythm-marker",
+      "t": 205.61640800000038,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-205953744",
+      "type": "rhythm-marker",
+      "t": 205.95374400000037,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-206371854",
+      "type": "rhythm-marker",
+      "t": 206.37185400000038,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-206730126",
+      "type": "rhythm-marker",
+      "t": 206.73012550000038,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-207076047",
+      "type": "rhythm-marker",
+      "t": 207.0760470000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-207413383",
+      "type": "rhythm-marker",
+      "t": 207.41338300000038,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-207831493",
+      "type": "rhythm-marker",
+      "t": 207.8314930000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-208189765",
+      "type": "rhythm-marker",
+      "t": 208.1897645000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-208535686",
+      "type": "rhythm-marker",
+      "t": 208.5356860000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-208873022",
+      "type": "rhythm-marker",
+      "t": 208.8730220000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-209291132",
+      "type": "rhythm-marker",
+      "t": 209.2911320000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-209649404",
+      "type": "rhythm-marker",
+      "t": 209.6494035000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-209995325",
+      "type": "rhythm-marker",
+      "t": 209.9953250000004,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-210332661",
+      "type": "rhythm-marker",
+      "t": 210.3326610000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-210750771",
+      "type": "rhythm-marker",
+      "t": 210.7507710000004,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-211109043",
+      "type": "rhythm-marker",
+      "t": 211.1090425000004,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-211454964",
+      "type": "rhythm-marker",
+      "t": 211.45496400000042,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-211792300",
+      "type": "rhythm-marker",
+      "t": 211.7923000000004,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-212210410",
+      "type": "rhythm-marker",
+      "t": 212.21041000000042,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-212568682",
+      "type": "rhythm-marker",
+      "t": 212.56868150000042,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-212914603",
+      "type": "rhythm-marker",
+      "t": 212.91460300000043,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-213251939",
+      "type": "rhythm-marker",
+      "t": 213.25193900000042,
+      "slotId": "camarao",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z1-213670049",
+      "type": "rhythm-marker",
+      "t": 213.67004900000043,
+      "slotId": "z1",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z2-214028321",
+      "type": "rhythm-marker",
+      "t": 214.02832050000043,
+      "slotId": "z2",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-z3-214374242",
+      "type": "rhythm-marker",
+      "t": 214.37424200000044,
+      "slotId": "z3",
+      "source": "predicted"
+    },
+    {
+      "id": "predicted-camarao-214711578",
+      "type": "rhythm-marker",
+      "t": 214.71157800000043,
+      "slotId": "camarao",
+      "source": "predicted"
+    }
+  ]
+}

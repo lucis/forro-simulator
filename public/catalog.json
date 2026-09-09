@@ -1,0 +1,12 @@
+{
+  "tracks": [
+    {
+      "id": "se-tu-quiser",
+      "title": "Se Tu Quiser",
+      "artist": "Santana, O Cantador",
+      "rhythmId": "xote",
+      "audioUrl": "/tracks/se-tu-quiser/audio.mp3",
+      "timelineUrl": "/tracks/se-tu-quiser/timeline.json"
+    }
+  ]
+}
