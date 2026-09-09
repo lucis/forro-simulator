@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..600&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root { font-family: 'Manrope', system-ui, sans-serif; color: #f4f0e8; background: #0c0e10; font-synthesis: none; text-rendering: optimizeLegibility; }
 * { box-sizing: border-box; }
@@ -15,15 +15,15 @@ button { color: inherit; }
 .studio-badge { flex: 0 0 auto; margin-left: auto; padding: 0.45rem 0.65rem; border: 1px solid #decfe2; border-radius: 999px; color: #6b4775; font-family: 'DM Mono', monospace; font-size: 0.65rem; }
 .hero { display: grid; max-width: 640px; margin: 0 auto 1rem; padding: 0.25rem 0; text-align: center; gap: 0.4rem; }
 .hero h2 { color: #2b103f; font-size: clamp(1.25rem, 5.5vw, 1.9rem); line-height: 1.15; }
-.hero-subtitle { margin: 0; color: #6b3579; font-size: clamp(0.9rem, 3vw, 1.05rem); font-weight: 600; }
+.hero-subtitle { margin: 0; color: #6b3579; font-family: 'Fraunces', serif; font-size: clamp(1rem, 3.4vw, 1.2rem); font-style: italic; font-weight: 500; }
 .hero-steps { display: grid; margin: 0.65rem 0 0; padding: 0; color: #4a2358; font-size: 0.88rem; list-style: none; gap: 0.4rem; text-align: left; }
 .hero-steps li { display: flex; align-items: center; gap: 0.65rem; }
 .hero-step-number { display: grid; flex: 0 0 auto; width: 1.4rem; height: 1.4rem; border-radius: 50%; color: #fff; background: #b34bc4; font-family: 'DM Mono', monospace; font-size: 0.78rem; font-weight: 700; place-items: center; }
 .catalog-panel, .studio-player { max-width: 1180px; margin: 0 auto 1rem; }
 .catalog-panel .kicker, .studio-player .kicker { color: #b057b7; }
 .catalog-panel h2 { color: #321546; font-size: 1.55rem; }
-.track-select { width: 100%; min-height: 48px; margin: 0.75rem 0 1rem; padding: 0.7rem 0.9rem; border: 1px solid #e0d2e2; border-radius: 0.7rem; color: #351742; background: #fff; font-weight: 700; }
-.simulate-button { min-height: 48px; padding: 0.7rem 1.4rem; font-size: 0.9rem; }
+.track-select { width: 100%; min-height: 48px; margin: 0.75rem 0 1rem; padding: 0.7rem 0.9rem; border: 1px solid #e0d2e2; border-radius: 0.7rem; color: #351742; background: #fff; box-shadow: 0 6px 18px rgb(90 28 105 / 8%); font-weight: 700; }
+.simulate-button { min-height: 48px; padding: 0.7rem 1.4rem; box-shadow: 0 10px 24px rgb(255 120 73 / 30%); font-size: 0.9rem; }
 .studio-player { overflow: hidden; border: 1px solid #3a1c47; border-radius: 1.15rem; background: #1b0d27; box-shadow: 0 22px 60px rgb(44 13 58 / 20%); }
 .dance-stage-placeholder { position: relative; display: grid; min-height: min(54svh, 30rem); overflow: hidden; border-block: 1px solid #492452; place-items: end center; background: radial-gradient(circle at 50% 70%, #8d416d 0, #3b193d 42%, #160a22 76%); }
 .dance-stage-placeholder::before { position: absolute; right: -15%; bottom: -30%; left: -15%; height: 55%; border-radius: 50%; background: radial-gradient(ellipse, #f3a365 0, #9b4e69 35%, transparent 68%); content: ''; opacity: 0.6; }
@@ -38,18 +38,18 @@ button { color: inherit; }
 .dance-count strong { color: #f1a060; font-size: 1.8rem; line-height: 1; }
 .dance-count.is-active strong { color: #ec8cff; text-shadow: 0 0 22px rgb(214 96 232 / 52%); }
 .dance-controls { display: flex; flex-wrap: wrap; align-items: center; padding: 0.75rem 1rem; border-bottom: 1px solid #402049; gap: 0.5rem; }
-.step-select { flex: 1 1 100%; min-height: 44px; padding: 0.5rem 0.7rem; border: 1px solid #563160; border-radius: 0.55rem; color: #d8c7dc; background: #281332; font-weight: 600; }
+.step-select { flex: 1 1 100%; min-height: 44px; padding: 0.5rem 0.7rem; border: 1px solid #563160; border-radius: 0.55rem; color: #d8c7dc; background: #281332; box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%); font-weight: 600; }
 .camera-presets, .visibility-toggles { display: flex; gap: 0.35rem; }
-.icon-toggle { display: grid; flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 0.3rem 0.55rem; border: 1px solid #563160; border-radius: 0.55rem; color: #d8c7dc; background: #281332; font-size: 0.55rem; text-align: center; place-items: center; gap: 0.15rem; }
+.icon-toggle { display: grid; flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 0.3rem 0.55rem; border: 1px solid #563160; border-radius: 0.55rem; color: #d8c7dc; background: #281332; font-size: 0.55rem; text-align: center; transition: background-color 0.15s, border-color 0.15s, color 0.15s; place-items: center; gap: 0.15rem; }
 .icon-toggle svg { display: block; }
-.icon-toggle[aria-pressed='true'] { border-color: #dc7be9; color: #26102f; background: #d77ce2; }
+.icon-toggle[aria-pressed='true'] { border-color: #dc7be9; color: #26102f; background: #d77ce2; box-shadow: 0 6px 16px rgb(215 124 226 / 35%); }
 .studio-player .audio-player { padding: 0 1rem 1rem; }
 .studio-player .waveform { min-height: 48px; margin-top: 0.75rem; background: #110819; }
 .studio-player .transport { flex-wrap: wrap; }
 .studio-player .zoom-control { display: none; }
 .studio-player .rate-control { margin-left: auto; }
 .studio-player .rate-button { min-height: 44px; padding: 0.4rem 0.7rem; }
-.play-button { display: grid; flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 0; font-size: 1.05rem; place-items: center; }
+.play-button { display: grid; flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 0; box-shadow: 0 8px 18px rgb(255 120 73 / 28%); font-size: 1.05rem; place-items: center; }
 .loading-state, .error-state, .not-found { max-width: 1180px; margin: 2rem auto; padding: 1rem; color: #563261; }
 .error-state { border: 1px solid #d99090; border-radius: 0.75rem; background: #fff0ed; }
 .brand-logo { border-radius: 0.75rem; background: #f7e7d8; }
@@ -68,7 +68,7 @@ button { color: inherit; }
 .app-header > div { min-width: 0; flex: 1 1 auto; }
 .brand-mark { flex: 0 0 auto; display: grid; width: 2.75rem; height: 2.75rem; border-radius: 0.8rem; place-items: center; color: #111; background: #ff7849; font-weight: 800; letter-spacing: -0.08em; }
 .eyebrow, .kicker { margin: 0 0 0.25rem; color: #ff936c; font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase; }
-h1, h2 { margin: 0; letter-spacing: -0.04em; }
+h1, h2 { margin: 0; font-family: 'Fraunces', 'Manrope', serif; font-optical-sizing: auto; font-weight: 600; letter-spacing: -0.01em; }
 h1 { font-size: 1.3rem; }
 h2 { font-size: clamp(1.15rem, 2vw, 1.55rem); }
 .build-label { flex: 0 0 auto; margin-left: auto; padding: 0.45rem 0.7rem; border: 1px solid #30343a; border-radius: 999px; color: #8f969e; font-family: 'DM Mono', monospace; font-size: 0.68rem; }
