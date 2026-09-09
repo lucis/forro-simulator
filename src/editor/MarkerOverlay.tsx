@@ -97,7 +97,9 @@ export function MarkerOverlay({
               style={{ left: `${timeToViewportPercent(marker.t, viewport)}%` }}
               title={`${slot?.danceLabel ?? marker.slotId} · ${marker.t.toFixed(2)}s · ${marker.source}`}
             >
-              {slot?.stroke === 'bottom' ? 'C' : 'Z'}
+              {unusualIds.has(marker.id) ? (
+                <span className="marker-warning" aria-hidden="true">!</span>
+              ) : null}
             </button>
           )
         })}

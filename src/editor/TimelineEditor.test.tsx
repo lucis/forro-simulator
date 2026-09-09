@@ -60,6 +60,7 @@ test('apaga o marcador selecionado com Delete', () => {
   )
 
   const marker = screen.getByRole('button', { name: 'Topo em 1.00 segundos' })
+  expect(marker).toBeEmptyDOMElement()
   fireEvent.click(marker)
   fireEvent.keyDown(marker, { key: 'Delete' })
 
