@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react'
 import { expect, test } from 'vitest'
 import App from './App'
 
-test('abre a Home Studio como experiência principal', () => {
+test('carrega a Home Studio sob demanda', async () => {
   window.history.replaceState({}, '', '/')
   render(<App />)
-  expect(screen.getByRole('heading', { name: 'Simulador de Forró' })).toBeInTheDocument()
-  expect(screen.getByRole('heading', { name: 'Escolha o ritmo' })).toBeInTheDocument()
+  expect(screen.getByText('Carregando interface…')).toBeInTheDocument()
+  expect(await screen.findByRole('heading', { name: 'Simulador de Forró' })).toBeInTheDocument()
 })

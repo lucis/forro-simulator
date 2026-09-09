@@ -33,6 +33,16 @@ button { color: inherit; }
 .dance-stage-placeholder div { position: absolute; z-index: 2; top: 0.8rem; left: 0.8rem; display: grid; padding: 0.6rem 0.75rem; border: 1px solid rgb(255 255 255 / 14%); border-radius: 0.65rem; color: #eadced; background: rgb(25 9 35 / 75%); backdrop-filter: blur(8px); gap: 0.2rem; }
 .dance-stage-placeholder span { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .dance-stage-placeholder strong { color: #f2a35f; font-size: 0.82rem; }
+.stage-wrap { position: relative; border-block: 1px solid #492452; background: radial-gradient(circle at 50% 75%, #763a59, #1b0b28 72%); }
+.dance-stage { width: 100%; height: min(56svh, 31rem); min-height: 24rem; }
+.dance-count { position: absolute; z-index: 2; top: 0.8rem; left: 0.8rem; display: grid; min-width: 6rem; padding: 0.65rem 0.75rem; border: 1px solid rgb(255 255 255 / 16%); border-radius: 0.7rem; color: #decce4; background: rgb(25 9 35 / 76%); backdrop-filter: blur(10px); gap: 0.1rem; }
+.dance-count span { font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.dance-count strong { color: #f1a060; font-size: 1.8rem; line-height: 1; }
+.dance-count.is-active strong { color: #ec8cff; text-shadow: 0 0 22px rgb(214 96 232 / 52%); }
+.dance-controls { display: flex; overflow-x: auto; padding: 0.75rem 1rem; border-bottom: 1px solid #402049; gap: 0.5rem; }
+.dance-controls button { flex: 0 0 auto; min-height: 44px; padding: 0.55rem 0.8rem; border: 1px solid #563160; border-radius: 0.55rem; color: #d8c7dc; background: #281332; }
+.dance-controls button[aria-pressed='true'] { border-color: #dc7be9; color: #26102f; background: #d77ce2; }
+.camera-presets { display: flex; gap: 0.35rem; }
 .studio-player .audio-player { padding: 0 1rem 1rem; }
 .studio-player .waveform { min-height: 78px; margin-top: 1rem; background: #110819; }
 .studio-player .transport { flex-wrap: wrap; }

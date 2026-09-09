@@ -158,6 +158,10 @@ export function TimelineEditor({ currentTime, duration, viewport, audioPlayer, t
     if (!file) return
     try {
       const parsed = parseTrackTimeline(JSON.parse(await file.text()))
+      if (parsed.trackId !== timeline.trackId || parsed.rhythmId !== timeline.rhythmId) {
+        onNotice('Não foi possível importar: a timeline pertence a outra música ou ritmo.')
+        return
+      }
       onTimelineChange(parsed)
       setSelectedId(null)
       setUnusualIds(new Set())

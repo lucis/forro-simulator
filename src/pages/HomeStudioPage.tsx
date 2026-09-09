@@ -1,10 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import logoUrl from '../assets/logo.png'
 import { AudioPlayer } from '../audio/AudioPlayer'
 import type { TimelineViewport } from '../audio/timelineViewport'
 import type { TrackCatalog, TrackCatalogEntry } from '../catalog/catalog'
 import { loadCatalog, loadCatalogTrack } from '../catalog/catalogRepository'
+import { DanceControls } from '../components/DanceControls'
+import { DanceCount } from '../components/DanceCount'
+import type { CameraPreset } from '../dance/DanceScene'
+import { getDanceClockState } from '../dance/danceClock'
+import { interpolatePattern } from '../dance/interpolateDance'
+import { BASIC_XOTE } from '../dance/patterns/basicXote'
+import { XOTE_RHYTHM } from '../domain/rhythm'
 import type { TrackTimeline } from '../domain/timeline'
+
+const DanceStage = lazy(() => import('../dance/DanceStage').then((module) => ({ default: module.DanceStage })))
 
 type Props = {
   catalogLoader?: () => Promise<TrackCatalog>
@@ -22,6 +31,9 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [viewport, setViewport] = useState<TimelineViewport>({ start: 0, end: 0 })
+  const [camera, setCamera] = useState<CameraPreset>('front')
+  const [showLeader, setShowLeader] = useState(true)
+  const [showFollower, setShowFollower] = useState(true)
 
   const chooseTrack = (id: string) => {
     setTimeline(null)
@@ -51,6 +63,12 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
 
   const rhythms = useMemo(() => [...new Set(catalog?.tracks.map(({ rhythmId }) => rhythmId) ?? [])], [catalog])
   const visibleTracks = catalog?.tracks.filter(({ rhythmId }) => filter === 'all' || rhythmId === filter) ?? []
+  const rhythm = selected?.rhythmId === 'xote' ? XOTE_RHYTHM : null
+  const clock = timeline && rhythm ? getDanceClockState({ time: currentTime, timeline, rhythm }) : null
+  const patternProgress = clock ? ((clock.cycleIndex + clock.cycleProgress) / BASIC_XOTE.durationInCycles) % 1 : 0
+  const pose = clock?.active ? interpolatePattern(BASIC_XOTE, patternProgress) : BASIC_XOTE.keyframes[0].pose
+  const lastMarkerTime = timeline?.events.filter(({ type }) => type === 'rhythm-marker').at(-1)?.t ?? Number.POSITIVE_INFINITY
+  const countLabel = clock?.active ? clock.danceLabel ?? '—' : currentTime >= lastMarkerTime ? 'Fim' : clock?.section ? 'Pausa' : 'Prepare-se'
   const chooseFilter = (rhythmId: string) => {
     setFilter(rhythmId)
     const first = catalog?.tracks.find((track) => rhythmId === 'all' || track.rhythmId === rhythmId)
@@ -79,7 +97,11 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
       {selected ? (
         <section className="studio-player" aria-labelledby="selected-track-title">
           <div className="selected-track-copy"><p className="kicker">Agora dançando</p><h2 id="selected-track-title">{selected.title}</h2><p>{selected.artist} · {rhythmName(selected.rhythmId)}</p></div>
-          <div className="dance-stage-placeholder" aria-label="Palco de dança"><img src={logoUrl} alt="Casal dançando forró" /><div><span>Palco em preparação</span><strong>1 · 2 · 3 · pausa</strong></div></div>
+          <div className="stage-wrap">
+            <Suspense fallback={<div className="dance-stage stage-loading">Montando o salão…</div>}><DanceStage pose={pose} showLeader={showLeader} showFollower={showFollower} camera={camera} /></Suspense>
+            <DanceCount label={countLabel} active={Boolean(clock?.active)} />
+          </div>
+          <DanceControls camera={camera} onCameraChange={setCamera} showLeader={showLeader} showFollower={showFollower} onLeaderChange={setShowLeader} onFollowerChange={setShowFollower} />
           {timeline ? <AudioPlayer key={selected.id} src={selected.audioUrl} currentTime={currentTime} onCurrentTimeChange={setCurrentTime} onDurationChange={setDuration} onViewportChange={setViewport} /> : null}
           <span className="visually-hidden">{duration} {viewport.start}</span>
         </section>

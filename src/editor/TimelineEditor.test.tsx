@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { expect, test, vi } from 'vitest'
 import { EMPTY_XOTE_TIMELINE } from '../domain/timeline'
 import { TimelineEditor } from './TimelineEditor'
@@ -67,4 +67,17 @@ test('apaga o marcador selecionado com Delete', () => {
   expect(onTimelineChange).toHaveBeenCalledWith(
     expect.objectContaining({ events: [] }),
   )
+})
+
+test('rejeita timeline de outra música sem substituir o rascunho', async () => {
+  const onTimelineChange = vi.fn()
+  const onNotice = vi.fn()
+  render(<TimelineEditor currentTime={0} duration={10} viewport={{ start: 0, end: 10 }} audioPlayer={<div />} timeline={EMPTY_XOTE_TIMELINE} onTimelineChange={onTimelineChange} onNotice={onNotice} />)
+  const file = new File([''], 'timeline.json', { type: 'application/json' })
+  Object.defineProperty(file, 'text', { value: async () => JSON.stringify({ trackId: 'outra', rhythmId: 'xote', events: [] }) })
+
+  fireEvent.change(screen.getByLabelText('Arquivo da timeline'), { target: { files: [file] } })
+
+  await waitFor(() => expect(onNotice).toHaveBeenCalledWith('Não foi possível importar: a timeline pertence a outra música ou ritmo.'))
+  expect(onTimelineChange).not.toHaveBeenCalled()
 })

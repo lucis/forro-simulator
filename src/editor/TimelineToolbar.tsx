@@ -40,6 +40,7 @@ export function TimelineToolbar({
         Importar JSON
       </button>
       <input
+        aria-label="Arquivo da timeline"
         ref={fileInputRef}
         className="visually-hidden"
         type="file"
