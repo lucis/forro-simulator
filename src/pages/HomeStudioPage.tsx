@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import logoUrl from '../assets/logo.png'
 import { AudioPlayer } from '../audio/AudioPlayer'
 import type { TimelineViewport } from '../audio/timelineViewport'
@@ -36,6 +36,11 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
   const [showFollower, setShowFollower] = useState(true)
   const [patternId, setPatternId] = useState(DEFAULT_XOTE_PATTERN.id)
   const pattern = XOTE_PATTERNS.find(({ id }) => id === patternId) ?? DEFAULT_XOTE_PATTERN
+  const studioPlayerRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    if (started) studioPlayerRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
+  }, [started])
 
   const chooseTrack = (id: string) => {
     setStarted(false)
@@ -105,7 +110,7 @@ export function HomeStudioPage({ catalogLoader = loadCatalog, timelineLoader = l
       {!catalog && !error ? <p className="loading-state">Carregando catálogo…</p> : null}
       {error ? <p className="error-state" role="alert">{error}</p> : null}
       {started && selected ? (
-        <section className="studio-player" aria-label={`Dançando ${selected.title}`}>
+        <section className="studio-player" aria-label={`Dançando ${selected.title}`} ref={studioPlayerRef}>
           <div className="stage-wrap">
             <Suspense fallback={<div className="dance-stage stage-loading">Montando o salão…</div>}><DanceStage pose={pose} showLeader={showLeader} showFollower={showFollower} camera={camera} /></Suspense>
             <DanceCount label={countLabel} active={Boolean(clock?.active)} />
