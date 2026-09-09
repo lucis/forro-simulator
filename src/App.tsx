@@ -36,6 +36,7 @@ function App() {
           viewport={viewport.end > viewport.start ? viewport : { start: 0, end: duration }}
           audioPlayer={(
             <AudioPlayer
+              src="/tracks/se-tu-quiser/audio.mp3"
               currentTime={currentTime}
               onCurrentTimeChange={setCurrentTime}
               onDurationChange={setDuration}

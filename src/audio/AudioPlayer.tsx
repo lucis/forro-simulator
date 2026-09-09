@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import WaveSurfer from 'wavesurfer.js'
-import xoteUrl from '../assets/Santana, O Cantador - Se Tu Quiser.mp3'
 import type { TimelineViewport } from './timelineViewport'
 
 type AudioPlayerProps = {
+  src: string
   currentTime: number
   onCurrentTimeChange(time: number): void
   onDurationChange(duration: number): void
@@ -18,6 +18,7 @@ function formatTime(seconds: number) {
 }
 
 export function AudioPlayer({
+  src,
   currentTime,
   onCurrentTimeChange,
   onDurationChange,
@@ -35,7 +36,7 @@ export function AudioPlayer({
 
     const waveSurfer = WaveSurfer.create({
       container: containerRef.current,
-      url: xoteUrl,
+      url: src,
       height: 108,
       waveColor: '#4b5158',
       progressColor: '#ff7849',
@@ -86,7 +87,7 @@ export function AudioPlayer({
       waveSurfer.destroy()
       waveSurferRef.current = null
     }
-  }, [onCurrentTimeChange, onDurationChange, onViewportChange])
+  }, [onCurrentTimeChange, onDurationChange, onViewportChange, src])
 
   useEffect(() => {
     const waveSurfer = waveSurferRef.current
